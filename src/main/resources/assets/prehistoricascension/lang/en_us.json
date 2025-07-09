@@ -1,0 +1,34 @@
+{
+  "item.prehistoricascension.balaur_skull_fossil": "Balaur Skull Fossil",
+  "item.prehistoricascension.deepslate_fossil": "Deepslate Fossil",
+  "item.prehistoricascension.crioceratities_shell": "Crioceratities shell",
+  "item.prehistoricascension.raw_squid": "Raw Squid",
+  "item.prehistoricascension.cooked_squid": "Cooked Squid",
+  "item.prehistoricascension.crioceratities_dna": "Crioceratites DNA",
+
+
+  "block.prehistoricascension.ginko_log": "Ginkgo Log",
+  "block.prehistoricascension.ginko_wood": "Ginkgo Wood",
+  "block.prehistoricascension.stripped_ginko_log": "Stripped Ginkgo Log",
+  "block.prehistoricascension.stripped_ginko_wood": "Stripped Ginkgo Wood",
+  "block.prehistoricascension.ginko_planks": "Ginkgo Planks",
+  "block.prehistoricascension.ginko_leaves": "Ginkgo Leaves",
+
+  "block.prehistoricascension.ginko_stairs": "Ginkgo Stairs",
+  "block.prehistoricascension.ginko_slab": "Ginkgo Slab",
+  "block.prehistoricascension.ginko_button": "Ginkgo Button",
+  "block.prehistoricascension.ginko_pressure_plate": "Ginkgo Pressure Plate",
+  "block.prehistoricascension.ginko_fence": "Ginkgo Fence",
+  "block.prehistoricascension.ginko_fence_gate": "Ginkgo Fence Gate",
+  "block.prehistoricascension.ginko_sign": "Ginkgo Sign",
+  "block.prehistoricascension.ginko_hanging_sign": "Ginkgo Hanging Sign",
+  "block.prehistoricascension.ginko_door": "Ginkgo Door",
+  "block.prehistoricascension.ginko_trapdoor": "Ginkgo Trapdoor",
+
+  "block.prehistoricascension.deepslate_fossil_block": "Deepslate Fossil",
+
+
+
+
+  "creativetab.pa_items": "Prehistoric Ascension"
+}

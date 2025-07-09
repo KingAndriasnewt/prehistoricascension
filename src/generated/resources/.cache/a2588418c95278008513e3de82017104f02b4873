@@ -1,0 +1,12 @@
+// 1.20.1	2025-07-07T13:50:32.6731394	Tags for minecraft:block mod id prehistoricascension
+1cd00dc0458faba0ff47e04972a03073256642b3 data/minecraft/tags/blocks/fences.json
+144e1d7d68986cc69a5ff364348f2fc5851ecb8e data/minecraft/tags/blocks/fence_gates.json
+88e232ddf405a305be15dab79f47fa0031c626e2 data/minecraft/tags/blocks/logs_that_burn.json
+35133e95f1c8fdd7a1c21afcc231fc0bffefb9a8 data/minecraft/tags/blocks/mineable/axe.json
+35133e95f1c8fdd7a1c21afcc231fc0bffefb9a8 data/minecraft/tags/blocks/mineable/hoe.json
+9cb69748ca8c01bcc7fcdc377cf756145abbe273 data/minecraft/tags/blocks/mineable/pickaxe.json
+35133e95f1c8fdd7a1c21afcc231fc0bffefb9a8 data/minecraft/tags/blocks/mineable/shovel.json
+35133e95f1c8fdd7a1c21afcc231fc0bffefb9a8 data/minecraft/tags/blocks/needs_diamond_tool.json
+9cb69748ca8c01bcc7fcdc377cf756145abbe273 data/minecraft/tags/blocks/needs_iron_tool.json
+35133e95f1c8fdd7a1c21afcc231fc0bffefb9a8 data/minecraft/tags/blocks/needs_stone_tool.json
+045789618baaded165f955554a3ecb894ef8510a data/minecraft/tags/blocks/planks.json

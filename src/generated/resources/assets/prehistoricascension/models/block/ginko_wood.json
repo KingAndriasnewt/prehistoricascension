@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "prehistoricascension:block/ginko_log",
+    "side": "prehistoricascension:block/ginko_log"
+  }
+}
