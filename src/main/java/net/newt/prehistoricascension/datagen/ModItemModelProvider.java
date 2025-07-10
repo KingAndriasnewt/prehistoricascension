@@ -27,20 +27,20 @@ public class ModItemModelProvider extends ItemModelProvider {
         simpleItem(ModItems.COOKED_SQUID);
         simpleItem(ModItems.CRIOCERATITIES_DNA);
 
-        fenceItem(ModBlocks.GINKO_FENCE, ModBlocks.GINKO_PLANKS);
-        buttonItem(ModBlocks.GINKO_BUTTON, ModBlocks.GINKO_PLANKS);
+        fenceItem(ModBlocks.GINKGO_FENCE, ModBlocks.GINKGO_PLANKS);
+        buttonItem(ModBlocks.GINKGO_BUTTON, ModBlocks.GINKGO_PLANKS);
 
-        evenSimplerBlockItem(ModBlocks.GINKO_STAIRS);
-        evenSimplerBlockItem(ModBlocks.GINKO_SLAB);
-        evenSimplerBlockItem(ModBlocks.GINKO_PRESSURE_PLATE);
-        evenSimplerBlockItem(ModBlocks.GINKO_FENCE_GATE);
+        evenSimplerBlockItem(ModBlocks.GINKGO_STAIRS);
+        evenSimplerBlockItem(ModBlocks.GINKGO_SLAB);
+        evenSimplerBlockItem(ModBlocks.GINKGO_PRESSURE_PLATE);
+        evenSimplerBlockItem(ModBlocks.GINKGO_FENCE_GATE);
 
-        simpleBlockItem(ModBlocks.GINKO_DOOR);
-        trapdoorItem(ModBlocks.GINKO_TRAPDOOR);
+        simpleBlockItem(ModBlocks.GINKGO_DOOR);
+        trapdoorItem(ModBlocks.GINKGO_TRAPDOOR);
 
 
-        simpleItem(ModItems.GINKO_SIGN);
-        simpleItem(ModItems.GINKO_HANGING_SIGN);
+        simpleItem(ModItems.GINKGO_SIGN);
+        simpleItem(ModItems.GINKGO_HANGING_SIGN);
 
     }
 

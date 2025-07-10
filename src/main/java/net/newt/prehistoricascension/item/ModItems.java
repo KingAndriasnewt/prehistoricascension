@@ -9,6 +9,7 @@ import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 import net.newt.prehistoricascension.PrehistoricAscension;
 import net.newt.prehistoricascension.block.ModBlocks;
+import net.newt.prehistoricascension.block.custom.GinkgoKnucklesItem;
 
 public class ModItems {
     public static final DeferredRegister<Item> ITEMS =
@@ -27,11 +28,13 @@ public class ModItems {
     public static final RegistryObject<Item> DEEPSLATE_FOSSIL = ITEMS.register("deepslate_fossil",
             () -> new Item(new Item.Properties()));
 
-    public static final RegistryObject<Item> GINKO_SIGN = ITEMS.register("ginko_sign",
-            () -> new SignItem(new Item.Properties().stacksTo(16), ModBlocks.GINKO_SIGN.get(), ModBlocks.GINKO_WALL_SIGN.get()));
-    public static final RegistryObject<Item> GINKO_HANGING_SIGN = ITEMS.register("ginko_hanging_sign",
-                () -> new HangingSignItem(ModBlocks.GINKO_HANGING_SIGN.get(), ModBlocks.GINKO_WALL_HANGING_SIGN.get(), new Item.Properties().stacksTo(16)));
+    public static final RegistryObject<Item> GINKGO_SIGN = ITEMS.register("ginkgo_sign",
+            () -> new SignItem(new Item.Properties().stacksTo(16), ModBlocks.GINKGO_SIGN.get(), ModBlocks.GINKGO_WALL_SIGN.get()));
+    public static final RegistryObject<Item> GINKGO_HANGING_SIGN = ITEMS.register("ginkgo_hanging_sign",
+                () -> new HangingSignItem(ModBlocks.GINKGO_HANGING_SIGN.get(), ModBlocks.GINKGO_WALL_HANGING_SIGN.get(), new Item.Properties().stacksTo(16)));
 
+    public static final RegistryObject<Item> GINKGO_KNUCKLES_ITEM = ITEMS.register("ginkgo_knuckles",
+            () -> new GinkgoKnucklesItem(ModBlocks.GINKGO_KNUCKLES.get(), new Item.Properties()));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);

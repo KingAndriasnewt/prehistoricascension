@@ -1,8 +1,0 @@
-{
-  "parent": "minecraft:block/door_top_right_open",
-  "render_type": "minecraft:cutout",
-  "textures": {
-    "bottom": "prehistoricascension:block/ginko_door_bottom",
-    "top": "prehistoricascension:block/ginko_door_top"
-  }
-}

@@ -19,41 +19,41 @@ public class ModBlockStateProvider extends BlockStateProvider {
 
     @Override
     protected void registerStatesAndModels() {
-        logBlock(((RotatedPillarBlock) ModBlocks.GINKO_LOG.get()));
-        axisBlock(((RotatedPillarBlock) ModBlocks.GINKO_WOOD.get()), blockTexture(ModBlocks.GINKO_LOG.get()), blockTexture(ModBlocks.GINKO_LOG.get()));
+        logBlock(((RotatedPillarBlock) ModBlocks.GINKGO_LOG.get()));
+        axisBlock(((RotatedPillarBlock) ModBlocks.GINKGO_WOOD.get()), blockTexture(ModBlocks.GINKGO_LOG.get()), blockTexture(ModBlocks.GINKGO_LOG.get()));
 
-        axisBlock(((RotatedPillarBlock) ModBlocks.STRIPPED_GINKO_LOG.get()), blockTexture(ModBlocks.STRIPPED_GINKO_LOG.get()),
-               new ResourceLocation(PrehistoricAscension.MOD_ID, "block/stripped_ginko_log_top"));
-        axisBlock(((RotatedPillarBlock) ModBlocks.STRIPPED_GINKO_WOOD.get()), blockTexture(ModBlocks.STRIPPED_GINKO_LOG.get()),
-                blockTexture(ModBlocks.STRIPPED_GINKO_LOG.get()));
+        axisBlock(((RotatedPillarBlock) ModBlocks.STRIPPED_GINKGO_LOG.get()), blockTexture(ModBlocks.STRIPPED_GINKGO_LOG.get()),
+               new ResourceLocation(PrehistoricAscension.MOD_ID, "block/stripped_ginkgo_log_top"));
+        axisBlock(((RotatedPillarBlock) ModBlocks.STRIPPED_GINKGO_WOOD.get()), blockTexture(ModBlocks.STRIPPED_GINKGO_LOG.get()),
+                blockTexture(ModBlocks.STRIPPED_GINKGO_LOG.get()));
 
-        blockItem(ModBlocks.GINKO_LOG);
-        blockItem(ModBlocks.GINKO_WOOD);
-        blockItem(ModBlocks.STRIPPED_GINKO_LOG);
-        blockItem(ModBlocks.STRIPPED_GINKO_WOOD);
+        blockItem(ModBlocks.GINKGO_LOG);
+        blockItem(ModBlocks.GINKGO_WOOD);
+        blockItem(ModBlocks.STRIPPED_GINKGO_LOG);
+        blockItem(ModBlocks.STRIPPED_GINKGO_WOOD);
 
-        blockwithitem(ModBlocks.GINKO_PLANKS);
+        blockwithitem(ModBlocks.GINKGO_PLANKS);
 
         blockwithitem(ModBlocks.DEEPSLATE_FOSSIL_BLOCK);
 
-        leavesBlock(ModBlocks.GINKO_LEAVES);
+        leavesBlock(ModBlocks.GINKGO_LEAVES);
 
-        stairsBlock(((StairBlock) ModBlocks.GINKO_STAIRS.get()), blockTexture(ModBlocks.GINKO_PLANKS.get()));
-        slabBlock(((SlabBlock) ModBlocks.GINKO_SLAB.get()), blockTexture(ModBlocks.GINKO_PLANKS.get()), blockTexture(ModBlocks.GINKO_PLANKS.get()));
+        stairsBlock(((StairBlock) ModBlocks.GINKGO_STAIRS.get()), blockTexture(ModBlocks.GINKGO_PLANKS.get()));
+        slabBlock(((SlabBlock) ModBlocks.GINKGO_SLAB.get()), blockTexture(ModBlocks.GINKGO_PLANKS.get()), blockTexture(ModBlocks.GINKGO_PLANKS.get()));
 
-        buttonBlock(((ButtonBlock) ModBlocks.GINKO_BUTTON.get()), blockTexture(ModBlocks.GINKO_PLANKS.get()));
-        pressurePlateBlock(((PressurePlateBlock) ModBlocks.GINKO_PRESSURE_PLATE.get()), blockTexture(ModBlocks.GINKO_PLANKS.get()));
+        buttonBlock(((ButtonBlock) ModBlocks.GINKGO_BUTTON.get()), blockTexture(ModBlocks.GINKGO_PLANKS.get()));
+        pressurePlateBlock(((PressurePlateBlock) ModBlocks.GINKGO_PRESSURE_PLATE.get()), blockTexture(ModBlocks.GINKGO_PLANKS.get()));
 
-        fenceBlock(((FenceBlock) ModBlocks.GINKO_FENCE.get()), blockTexture(ModBlocks.GINKO_PLANKS.get()));
-        fenceGateBlock(((FenceGateBlock) ModBlocks.GINKO_FENCE_GATE.get()), blockTexture(ModBlocks.GINKO_PLANKS.get()));
+        fenceBlock(((FenceBlock) ModBlocks.GINKGO_FENCE.get()), blockTexture(ModBlocks.GINKGO_PLANKS.get()));
+        fenceGateBlock(((FenceGateBlock) ModBlocks.GINKGO_FENCE_GATE.get()), blockTexture(ModBlocks.GINKGO_PLANKS.get()));
 
-        doorBlockWithRenderType(((DoorBlock) ModBlocks.GINKO_DOOR.get()), modLoc("block/ginko_door_bottom"), modLoc("block/ginko_door_top"), "cutout");
-        trapdoorBlockWithRenderType(((TrapDoorBlock) ModBlocks.GINKO_TRAPDOOR.get()), modLoc("block/ginko_trapdoor"), true, "cutout");
+        doorBlockWithRenderType(((DoorBlock) ModBlocks.GINKGO_DOOR.get()), modLoc("block/ginkgo_door_bottom"), modLoc("block/ginkgo_door_top"), "cutout");
+        trapdoorBlockWithRenderType(((TrapDoorBlock) ModBlocks.GINKGO_TRAPDOOR.get()), modLoc("block/ginkgo_trapdoor"), true, "cutout");
 
-        signBlock(((StandingSignBlock) ModBlocks.GINKO_SIGN.get()), ((WallSignBlock) ModBlocks.GINKO_WALL_SIGN.get()),
-        blockTexture(ModBlocks.GINKO_PLANKS.get()));
+        signBlock(((StandingSignBlock) ModBlocks.GINKGO_SIGN.get()), ((WallSignBlock) ModBlocks.GINKGO_WALL_SIGN.get()),
+        blockTexture(ModBlocks.GINKGO_PLANKS.get()));
 
-        hangingSignBlock(ModBlocks.GINKO_HANGING_SIGN.get(), ModBlocks.GINKO_WALL_HANGING_SIGN.get(), blockTexture(ModBlocks.GINKO_PLANKS.get()));
+        hangingSignBlock(ModBlocks.GINKGO_HANGING_SIGN.get(), ModBlocks.GINKGO_WALL_HANGING_SIGN.get(), blockTexture(ModBlocks.GINKGO_PLANKS.get()));
 
 
     }

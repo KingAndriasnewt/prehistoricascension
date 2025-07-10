@@ -5,5 +5,5 @@ import net.minecraft.world.level.block.state.properties.WoodType;
 import net.newt.prehistoricascension.PrehistoricAscension;
 
 public class ModWoodTypes {
-    public static final WoodType GINKO = WoodType.register(new WoodType(PrehistoricAscension.MOD_ID + ":ginko", BlockSetType.SPRUCE));
+    public static final WoodType GINKGO = WoodType.register(new WoodType(PrehistoricAscension.MOD_ID + ":ginkgo", BlockSetType.SPRUCE));
 }

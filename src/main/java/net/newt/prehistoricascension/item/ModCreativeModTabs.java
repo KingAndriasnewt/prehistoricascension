@@ -27,23 +27,24 @@ public class ModCreativeModTabs {
                     pOutput.accept(ModItems.COOKED_SQUID.get());
                     pOutput.accept(ModItems.CRIOCERATITIES_SHELL.get());
 
-                    pOutput.accept(ModBlocks.GINKO_LOG.get());
-                    pOutput.accept(ModBlocks.GINKO_WOOD.get());
-                    pOutput.accept(ModBlocks.STRIPPED_GINKO_LOG.get());
-                    pOutput.accept(ModBlocks.STRIPPED_GINKO_WOOD.get());
-                    pOutput.accept(ModBlocks.GINKO_PLANKS.get());
-                    pOutput.accept(ModBlocks.GINKO_STAIRS.get());
-                    pOutput.accept(ModBlocks.GINKO_SLAB.get());
-                    pOutput.accept(ModBlocks.GINKO_FENCE.get());
-                    pOutput.accept(ModBlocks.GINKO_FENCE_GATE.get());
-                    pOutput.accept(ModBlocks.GINKO_DOOR.get());
-                    pOutput.accept(ModBlocks.GINKO_TRAPDOOR.get());
-                    pOutput.accept(ModBlocks.GINKO_PRESSURE_PLATE.get());
-                    pOutput.accept(ModBlocks.GINKO_BUTTON.get());
-                    pOutput.accept(ModBlocks.GINKO_SIGN.get());
-                    pOutput.accept(ModBlocks.GINKO_HANGING_SIGN.get());
+                    pOutput.accept(ModBlocks.GINKGO_LOG.get());
+                    pOutput.accept(ModBlocks.GINKGO_WOOD.get());
+                    pOutput.accept(ModBlocks.STRIPPED_GINKGO_LOG.get());
+                    pOutput.accept(ModBlocks.STRIPPED_GINKGO_WOOD.get());
+                    pOutput.accept(ModBlocks.GINKGO_PLANKS.get());
+                    pOutput.accept(ModBlocks.GINKGO_STAIRS.get());
+                    pOutput.accept(ModBlocks.GINKGO_SLAB.get());
+                    pOutput.accept(ModBlocks.GINKGO_FENCE.get());
+                    pOutput.accept(ModBlocks.GINKGO_FENCE_GATE.get());
+                    pOutput.accept(ModBlocks.GINKGO_DOOR.get());
+                    pOutput.accept(ModBlocks.GINKGO_TRAPDOOR.get());
+                    pOutput.accept(ModBlocks.GINKGO_PRESSURE_PLATE.get());
+                    pOutput.accept(ModBlocks.GINKGO_BUTTON.get());
+                    pOutput.accept(ModBlocks.GINKGO_SIGN.get());
+                    pOutput.accept(ModBlocks.GINKGO_HANGING_SIGN.get());
+                    pOutput.accept(ModItems.GINKGO_KNUCKLES_ITEM.get());
 
-                    pOutput.accept(ModBlocks.GINKO_LEAVES.get());
+                    pOutput.accept(ModBlocks.GINKGO_LEAVES.get());
 
 
 

@@ -28,15 +28,15 @@ public class ModBlocks {
     public static final DeferredRegister<Block> BLOCKS =
             DeferredRegister.create(ForgeRegistries.BLOCKS, PrehistoricAscension.MOD_ID);
 
-        public static final RegistryObject<Block> GINKO_LOG = registerBlock("ginko_log",
+        public static final RegistryObject<Block> GINKGO_LOG = registerBlock("ginkgo_log",
                 () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.SPRUCE_LOG).strength(3f)));
-    public static final RegistryObject<Block> GINKO_WOOD = registerBlock("ginko_wood",
+    public static final RegistryObject<Block> GINKGO_WOOD = registerBlock("ginkgo_wood",
             () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.SPRUCE_WOOD).strength(3f)));
-    public static final RegistryObject<Block> STRIPPED_GINKO_LOG = registerBlock("stripped_ginko_log",
+    public static final RegistryObject<Block> STRIPPED_GINKGO_LOG = registerBlock("stripped_ginkgo_log",
             () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.STRIPPED_SPRUCE_LOG).strength(3f)));
-    public static final RegistryObject<Block> STRIPPED_GINKO_WOOD = registerBlock("stripped_ginko_wood",
+    public static final RegistryObject<Block> STRIPPED_GINKGO_WOOD = registerBlock("stripped_ginkgo_wood",
             () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.STRIPPED_SPRUCE_WOOD).strength(3f)));
-    public static final RegistryObject<Block> GINKO_PLANKS = registerBlock("ginko_planks",
+    public static final RegistryObject<Block> GINKGO_PLANKS = registerBlock("ginkgo_planks",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.SPRUCE_PLANKS)) {
                 @Override
                 public boolean isFlammable(BlockState state, BlockGetter level, BlockPos pos, Direction direction) {
@@ -53,7 +53,7 @@ public class ModBlocks {
                     return 5;
                 }
             });
-    public static final RegistryObject<Block> GINKO_LEAVES = registerBlock("ginko_leaves",
+    public static final RegistryObject<Block> GINKGO_LEAVES = registerBlock("ginkgo_leaves",
             () -> new LeavesBlock(BlockBehaviour.Properties.copy(Blocks.SPRUCE_LEAVES)){
                 @Override
                 public boolean isFlammable(BlockState state, BlockGetter level, BlockPos pos, Direction direction) {
@@ -71,38 +71,42 @@ public class ModBlocks {
                 }
             });
 
-    public static final RegistryObject<Block> GINKO_STAIRS = registerBlock("ginko_stairs",
-            () -> new StairBlock(() -> ModBlocks.GINKO_PLANKS.get().defaultBlockState(),
+    public static final RegistryObject<Block> GINKGO_STAIRS = registerBlock("ginkgo_stairs",
+            () -> new StairBlock(() -> ModBlocks.GINKGO_PLANKS.get().defaultBlockState(),
                     BlockBehaviour.Properties.copy(Blocks.SPRUCE_STAIRS)));
-    public static final RegistryObject<Block> GINKO_SLAB = registerBlock("ginko_slab",
+    public static final RegistryObject<Block> GINKGO_SLAB = registerBlock("ginkgo_slab",
             () -> new SlabBlock(BlockBehaviour.Properties.copy(Blocks.SPRUCE_SLAB)));
 
-    public static final RegistryObject<Block> GINKO_BUTTON = registerBlock("ginko_button",
+    public static final RegistryObject<Block> GINKGO_BUTTON = registerBlock("ginkgo_button",
             () -> new ButtonBlock(BlockBehaviour.Properties.copy(Blocks.SPRUCE_BUTTON),
                     BlockSetType.SPRUCE, 20, true));
-    public static final RegistryObject<Block> GINKO_PRESSURE_PLATE = registerBlock("ginko_pressure_plate",
+    public static final RegistryObject<Block> GINKGO_PRESSURE_PLATE = registerBlock("ginkgo_pressure_plate",
             () -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.EVERYTHING, BlockBehaviour.Properties.copy(Blocks.SPRUCE_PRESSURE_PLATE),
                     BlockSetType.SPRUCE));
 
-    public static final RegistryObject<Block> GINKO_FENCE = registerBlock("ginko_fence",
+    public static final RegistryObject<Block> GINKGO_FENCE = registerBlock("ginkgo_fence",
             () -> new FenceBlock(BlockBehaviour.Properties.copy(Blocks.SPRUCE_FENCE)));
-    public static final RegistryObject<Block> GINKO_FENCE_GATE = registerBlock("ginko_fence_gate",
+    public static final RegistryObject<Block> GINKGO_FENCE_GATE = registerBlock("ginkgo_fence_gate",
             () -> new FenceGateBlock(BlockBehaviour.Properties.copy(Blocks.SPRUCE_FENCE_GATE), SoundEvents.FENCE_GATE_OPEN, SoundEvents.FENCE_GATE_CLOSE));
 
-    public static final RegistryObject<Block> GINKO_SIGN = BLOCKS.register("ginko_sign",
-            () -> new ModStandingSignBlock(BlockBehaviour.Properties.copy(Blocks.SPRUCE_SIGN), ModWoodTypes.GINKO));
-    public static final RegistryObject<Block> GINKO_WALL_SIGN = BLOCKS.register("ginko_wall_sign",
-            () -> new ModWallSignBlock(BlockBehaviour.Properties.copy(Blocks.SPRUCE_WALL_SIGN), ModWoodTypes.GINKO));
+    public static final RegistryObject<Block> GINKGO_SIGN = BLOCKS.register("ginkgo_sign",
+            () -> new ModStandingSignBlock(BlockBehaviour.Properties.copy(Blocks.SPRUCE_SIGN), ModWoodTypes.GINKGO));
+    public static final RegistryObject<Block> GINKGO_WALL_SIGN = BLOCKS.register("ginkgo_wall_sign",
+            () -> new ModWallSignBlock(BlockBehaviour.Properties.copy(Blocks.SPRUCE_WALL_SIGN), ModWoodTypes.GINKGO));
 
-    public static final RegistryObject<Block> GINKO_DOOR = registerBlock("ginko_door",
+    public static final RegistryObject<Block> GINKGO_DOOR = registerBlock("ginkgo_door",
             () -> new DoorBlock(BlockBehaviour.Properties.copy(Blocks.SPRUCE_DOOR).noOcclusion(), BlockSetType.SPRUCE));
-    public static final RegistryObject<Block> GINKO_TRAPDOOR = registerBlock("ginko_trapdoor",
+    public static final RegistryObject<Block> GINKGO_TRAPDOOR = registerBlock("ginkgo_trapdoor",
             () -> new TrapDoorBlock(BlockBehaviour.Properties.copy(Blocks.SPRUCE_TRAPDOOR).noOcclusion(), BlockSetType.SPRUCE));
 
-    public static final RegistryObject<Block> GINKO_HANGING_SIGN = BLOCKS.register("ginko_hanging_sign",
-            () -> new ModHangingSignBlock(BlockBehaviour.Properties.copy(Blocks.SPRUCE_HANGING_SIGN), ModWoodTypes.GINKO));
-    public static final RegistryObject<Block> GINKO_WALL_HANGING_SIGN = BLOCKS.register("ginko_wall_hanging_sign",
-            () -> new ModWallHangingSignBlock(BlockBehaviour.Properties.copy(Blocks.SPRUCE_WALL_HANGING_SIGN), ModWoodTypes.GINKO));
+    public static final RegistryObject<Block> GINKGO_HANGING_SIGN = BLOCKS.register("ginkgo_hanging_sign",
+            () -> new ModHangingSignBlock(BlockBehaviour.Properties.copy(Blocks.SPRUCE_HANGING_SIGN), ModWoodTypes.GINKGO));
+    public static final RegistryObject<Block> GINKGO_WALL_HANGING_SIGN = BLOCKS.register("ginkgo_wall_hanging_sign",
+            () -> new ModWallHangingSignBlock(BlockBehaviour.Properties.copy(Blocks.SPRUCE_WALL_HANGING_SIGN), ModWoodTypes.GINKGO));
+
+    public static final RegistryObject<Block> GINKGO_KNUCKLES = BLOCKS.register("ginkgo_knuckles",
+            () -> new GinkgoKnucklesBlock(BlockBehaviour.Properties.copy(Blocks.SPRUCE_PLANKS).noOcclusion()));
+
 
     public static final RegistryObject<Block> DEEPSLATE_FOSSIL_BLOCK = registerBlock("deepslate_fossil_block",
             () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.DEEPSLATE)

@@ -22,14 +22,14 @@ public class ModItemTagGenerator extends ItemTagsProvider {
 
 
         this.tag(ItemTags.LOGS_THAT_BURN)
-                .add(ModBlocks.GINKO_LOG.get().asItem())
-                .add(ModBlocks.GINKO_WOOD.get().asItem())
-                .add(ModBlocks.STRIPPED_GINKO_LOG.get().asItem())
-                .add(ModBlocks.STRIPPED_GINKO_WOOD.get().asItem());
+                .add(ModBlocks.GINKGO_LOG.get().asItem())
+                .add(ModBlocks.GINKGO_WOOD.get().asItem())
+                .add(ModBlocks.STRIPPED_GINKGO_LOG.get().asItem())
+                .add(ModBlocks.STRIPPED_GINKGO_WOOD.get().asItem());
 
 
         this.tag(ItemTags.PLANKS)
-                .add(ModBlocks.GINKO_PLANKS.get().asItem());
+                .add(ModBlocks.GINKGO_PLANKS.get().asItem());
 
     }
 }

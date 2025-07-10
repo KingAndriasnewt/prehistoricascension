@@ -24,37 +24,38 @@ public class ModBlockLootTables extends BlockLootSubProvider {
 
     @Override
     protected void generate() {
-        this.dropSelf(ModBlocks.GINKO_LOG.get());
-        this.dropSelf(ModBlocks.GINKO_WOOD.get());
-        this.dropSelf(ModBlocks.STRIPPED_GINKO_LOG.get());
-        this.dropSelf(ModBlocks.STRIPPED_GINKO_WOOD.get());
-        this.dropSelf(ModBlocks.GINKO_PLANKS.get());
+        this.dropSelf(ModBlocks.GINKGO_LOG.get());
+        this.dropSelf(ModBlocks.GINKGO_WOOD.get());
+        this.dropSelf(ModBlocks.STRIPPED_GINKGO_LOG.get());
+        this.dropSelf(ModBlocks.STRIPPED_GINKGO_WOOD.get());
+        this.dropSelf(ModBlocks.GINKGO_PLANKS.get());
+        this.dropSelf(ModBlocks.GINKGO_KNUCKLES.get());
 
-        this.add(ModBlocks.GINKO_LEAVES.get(), block ->
-                createLeavesDrops(block, ModBlocks.GINKO_PLANKS.get(), NORMAL_LEAVES_SAPLING_CHANCES)); // TODO: Change to Sapling!
+        this.add(ModBlocks.GINKGO_LEAVES.get(), block ->
+                createLeavesDrops(block, ModBlocks.GINKGO_PLANKS.get(), NORMAL_LEAVES_SAPLING_CHANCES)); // TODO: Change to Sapling!
 
-        this.dropSelf(ModBlocks.GINKO_STAIRS.get());
-        this.dropSelf(ModBlocks.GINKO_BUTTON.get());
-        this.dropSelf(ModBlocks.GINKO_PRESSURE_PLATE.get());
-        this.dropSelf(ModBlocks.GINKO_FENCE.get());
-        this.dropSelf(ModBlocks.GINKO_FENCE_GATE.get());
+        this.dropSelf(ModBlocks.GINKGO_STAIRS.get());
+        this.dropSelf(ModBlocks.GINKGO_BUTTON.get());
+        this.dropSelf(ModBlocks.GINKGO_PRESSURE_PLATE.get());
+        this.dropSelf(ModBlocks.GINKGO_FENCE.get());
+        this.dropSelf(ModBlocks.GINKGO_FENCE_GATE.get());
 
-        this.dropSelf(ModBlocks.GINKO_TRAPDOOR.get());
-        this.add(ModBlocks.GINKO_DOOR.get(),
-                block -> createDoorTable(ModBlocks.GINKO_DOOR.get()));
+        this.dropSelf(ModBlocks.GINKGO_TRAPDOOR.get());
+        this.add(ModBlocks.GINKGO_DOOR.get(),
+                block -> createDoorTable(ModBlocks.GINKGO_DOOR.get()));
 
 
-        this.add(ModBlocks.GINKO_SLAB.get(),
-                block -> createSlabItemTable(ModBlocks.GINKO_SLAB.get()));
+        this.add(ModBlocks.GINKGO_SLAB.get(),
+                block -> createSlabItemTable(ModBlocks.GINKGO_SLAB.get()));
 
-        this.add(ModBlocks.GINKO_SIGN.get(), block ->
-                createSingleItemTable(ModItems.GINKO_SIGN.get()));
-        this.add(ModBlocks.GINKO_WALL_SIGN.get(), block ->
-                createSingleItemTable(ModItems.GINKO_SIGN.get()));
-        this.add(ModBlocks.GINKO_HANGING_SIGN.get(), block ->
-                createSingleItemTable(ModItems.GINKO_HANGING_SIGN.get()));
-        this.add(ModBlocks.GINKO_WALL_HANGING_SIGN.get(), block ->
-                createSingleItemTable(ModItems.GINKO_HANGING_SIGN.get()));
+        this.add(ModBlocks.GINKGO_SIGN.get(), block ->
+                createSingleItemTable(ModItems.GINKGO_SIGN.get()));
+        this.add(ModBlocks.GINKGO_WALL_SIGN.get(), block ->
+                createSingleItemTable(ModItems.GINKGO_SIGN.get()));
+        this.add(ModBlocks.GINKGO_HANGING_SIGN.get(), block ->
+                createSingleItemTable(ModItems.GINKGO_HANGING_SIGN.get()));
+        this.add(ModBlocks.GINKGO_WALL_HANGING_SIGN.get(), block ->
+                createSingleItemTable(ModItems.GINKGO_HANGING_SIGN.get()));
 
         this.add(ModBlocks.DEEPSLATE_FOSSIL_BLOCK.get(),
                 block -> createCopperLikeOreDrops(ModBlocks.DEEPSLATE_FOSSIL_BLOCK.get(), ModItems.DEEPSLATE_FOSSIL.get()));

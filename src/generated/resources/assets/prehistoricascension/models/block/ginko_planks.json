@@ -1,6 +1,0 @@
-{
-  "parent": "minecraft:block/cube_all",
-  "textures": {
-    "all": "prehistoricascension:block/ginko_planks"
-  }
-}

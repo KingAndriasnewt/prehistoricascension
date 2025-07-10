@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "facing=down":  { "model": "prehistoricascension:block/ginkgo_knuckles", "y": 0 },
+    "facing=up":    { "model": "prehistoricascension:block/ginkgo_knuckles", "x": 180, "y": 0 },
+    "facing=north": { "model": "prehistoricascension:block/ginkgo_knuckles", "y": 0 },
+    "facing=south": { "model": "prehistoricascension:block/ginkgo_knuckles", "y": 180 },
+    "facing=west":  { "model": "prehistoricascension:block/ginkgo_knuckles", "y": 270 },
+    "facing=east":  { "model": "prehistoricascension:block/ginkgo_knuckles", "y": 90 }
+  }
+}

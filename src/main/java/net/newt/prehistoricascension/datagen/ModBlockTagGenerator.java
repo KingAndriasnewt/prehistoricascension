@@ -37,19 +37,19 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
         this.tag(BlockTags.MINEABLE_WITH_AXE);
 
         this.tag(BlockTags.LOGS_THAT_BURN)
-                .add(ModBlocks.GINKO_LOG.get())
-                .add(ModBlocks.GINKO_WOOD.get())
-                .add(ModBlocks.STRIPPED_GINKO_LOG.get())
-                .add(ModBlocks.STRIPPED_GINKO_WOOD.get());
+                .add(ModBlocks.GINKGO_LOG.get())
+                .add(ModBlocks.GINKGO_WOOD.get())
+                .add(ModBlocks.STRIPPED_GINKGO_LOG.get())
+                .add(ModBlocks.STRIPPED_GINKGO_WOOD.get());
 
         this.tag(BlockTags.PLANKS)
-                .add(ModBlocks.GINKO_PLANKS.get());
+                .add(ModBlocks.GINKGO_PLANKS.get());
 
         this.tag(BlockTags.FENCES)
-                .add(ModBlocks.GINKO_FENCE.get());
+                .add(ModBlocks.GINKGO_FENCE.get());
 
         this.tag(BlockTags.FENCE_GATES)
-                .add(ModBlocks.GINKO_FENCE_GATE.get());
+                .add(ModBlocks.GINKGO_FENCE_GATE.get());
 
 
 

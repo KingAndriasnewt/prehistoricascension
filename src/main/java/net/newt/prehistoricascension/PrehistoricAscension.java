@@ -65,7 +65,7 @@ public class PrehistoricAscension
     public static class ClientModEvents {
         @SubscribeEvent
         public static void onClientSetup(FMLClientSetupEvent event) {
-            Sheets.addWoodType(ModWoodTypes.GINKO);
+            Sheets.addWoodType(ModWoodTypes.GINKGO);
         }
     }
 }
