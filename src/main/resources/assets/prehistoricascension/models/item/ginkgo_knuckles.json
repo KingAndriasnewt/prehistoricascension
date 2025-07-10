@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "prehistoricascension:block/ginkgo_knuckles"
+    "layer0": "prehistoricascension:block/ginkgo_knuckles_down"
   }
 }
