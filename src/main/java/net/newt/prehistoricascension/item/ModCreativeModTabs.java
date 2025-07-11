@@ -43,6 +43,8 @@ public class ModCreativeModTabs {
                     pOutput.accept(ModBlocks.GINKGO_SIGN.get());
                     pOutput.accept(ModBlocks.GINKGO_HANGING_SIGN.get());
                     pOutput.accept(ModItems.GINKGO_KNUCKLES_ITEM.get());
+                    pOutput.accept(ModItems.GINKGO_BOAT.get());
+                    pOutput.accept(ModItems.GINKGO_CHEST_BOAT.get());
 
                     pOutput.accept(ModBlocks.GINKGO_LEAVES.get());
 

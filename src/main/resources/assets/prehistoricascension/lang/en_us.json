@@ -6,6 +6,10 @@
   "item.prehistoricascension.cooked_squid": "Cooked Squid",
   "item.prehistoricascension.crioceratities_dna": "Crioceratites DNA",
 
+  "item.prehistoricascension.ginkgo_boat": "Ginkgo Boat",
+  "item.prehistoricascension.ginkgo_chest_boat": "Ginkgo Chest Boat",
+
+
 
   "block.prehistoricascension.ginkgo_log": "Ginkgo Log",
   "block.prehistoricascension.ginkgo_wood": "Ginkgo Wood",
@@ -28,7 +32,7 @@
 
   "block.prehistoricascension.deepslate_fossil_block": "Deepslate Fossil",
 
-
+  "entity.prehistoricascension.mod_chest_boat": "Boat With Chest",
 
 
   "creativetab.pa_items": "Prehistoric Ascension"

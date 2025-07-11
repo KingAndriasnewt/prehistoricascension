@@ -2,6 +2,7 @@ package net.newt.prehistoricascension;
 
 import com.mojang.logging.LogUtils;
 import net.minecraft.client.renderer.Sheets;
+import net.minecraft.client.renderer.entity.EntityRenderers;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
@@ -14,6 +15,8 @@ import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.newt.prehistoricascension.block.ModBlocks;
 import net.newt.prehistoricascension.block.entity.ModBlockEntities;
+import net.newt.prehistoricascension.entity.ModEntities;
+import net.newt.prehistoricascension.entity.client.ModBoatRenderer;
 import net.newt.prehistoricascension.item.ModCreativeModTabs;
 import net.newt.prehistoricascension.item.ModItems;
 import net.newt.prehistoricascension.util.ModWoodTypes;
@@ -35,6 +38,7 @@ public class PrehistoricAscension
         ModBlocks.register(modEventBus);
         ModCreativeModTabs.register(modEventBus);
         ModBlockEntities.register(modEventBus);
+        ModEntities.register(modEventBus);
 
 
         modEventBus.addListener(this::commonSetup);
@@ -66,6 +70,9 @@ public class PrehistoricAscension
         @SubscribeEvent
         public static void onClientSetup(FMLClientSetupEvent event) {
             Sheets.addWoodType(ModWoodTypes.GINKGO);
+
+            EntityRenderers.register(ModEntities.MOD_BOAT.get(), pContext -> new ModBoatRenderer(pContext, false));
+            EntityRenderers.register(ModEntities.MOD_CHEST_BOAT.get(), pContext -> new ModBoatRenderer(pContext, true));
         }
     }
 }

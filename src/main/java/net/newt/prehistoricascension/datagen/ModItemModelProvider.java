@@ -42,6 +42,10 @@ public class ModItemModelProvider extends ItemModelProvider {
         simpleItem(ModItems.GINKGO_SIGN);
         simpleItem(ModItems.GINKGO_HANGING_SIGN);
 
+
+        simpleItem(ModItems.GINKGO_BOAT);
+        simpleItem(ModItems.GINKGO_CHEST_BOAT);
+
     }
 
     public void fenceItem(RegistryObject<Block> block, RegistryObject<Block> baseBlock) {

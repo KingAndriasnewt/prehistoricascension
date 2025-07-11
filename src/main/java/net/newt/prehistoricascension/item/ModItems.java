@@ -10,6 +10,8 @@ import net.minecraftforge.registries.RegistryObject;
 import net.newt.prehistoricascension.PrehistoricAscension;
 import net.newt.prehistoricascension.block.ModBlocks;
 import net.newt.prehistoricascension.block.custom.GinkgoKnucklesItem;
+import net.newt.prehistoricascension.entity.custom.ModBoatEntity;
+import net.newt.prehistoricascension.item.custom.ModBoatItem;
 
 public class ModItems {
     public static final DeferredRegister<Item> ITEMS =
@@ -35,6 +37,11 @@ public class ModItems {
 
     public static final RegistryObject<Item> GINKGO_KNUCKLES_ITEM = ITEMS.register("ginkgo_knuckles",
             () -> new GinkgoKnucklesItem(ModBlocks.GINKGO_KNUCKLES.get(), new Item.Properties()));
+
+    public static final RegistryObject<Item> GINKGO_BOAT = ITEMS.register("ginkgo_boat",
+            () -> new ModBoatItem(false, ModBoatEntity.Type.GINKGO,new Item.Properties()));
+    public static final RegistryObject<Item> GINKGO_CHEST_BOAT = ITEMS.register("ginkgo_chest_boat",
+            () -> new ModBoatItem(true, ModBoatEntity.Type.GINKGO,new Item.Properties()));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
