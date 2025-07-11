@@ -1,8 +1,8 @@
-// 1.20.1	2025-07-09T20:14:23.347283	Tags for minecraft:block mod id prehistoricascension
+// 1.20.1	2025-07-11T13:38:36.9108202	Tags for minecraft:block mod id prehistoricascension
 febc1944b0b617e797b81e7d9e2a22e46aea0d86 data/minecraft/tags/blocks/fences.json
 75c887885f1aacfa40869134f6b33126e15adb22 data/minecraft/tags/blocks/fence_gates.json
 56aa99048ff005c7ec82512329a25ea8db22d796 data/minecraft/tags/blocks/logs_that_burn.json
-35133e95f1c8fdd7a1c21afcc231fc0bffefb9a8 data/minecraft/tags/blocks/mineable/axe.json
+9af816fc3e9860463cdab64ceb6f57d83d5e29d6 data/minecraft/tags/blocks/mineable/axe.json
 35133e95f1c8fdd7a1c21afcc231fc0bffefb9a8 data/minecraft/tags/blocks/mineable/hoe.json
 9cb69748ca8c01bcc7fcdc377cf756145abbe273 data/minecraft/tags/blocks/mineable/pickaxe.json
 35133e95f1c8fdd7a1c21afcc231fc0bffefb9a8 data/minecraft/tags/blocks/mineable/shovel.json
