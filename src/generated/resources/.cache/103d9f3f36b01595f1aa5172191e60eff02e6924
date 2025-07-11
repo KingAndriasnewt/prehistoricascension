@@ -1,0 +1,4 @@
+// 1.20.1	2025-07-11T13:38:36.9048238	Registries
+c586145fcfabd4f15b2bcdc148bbcc872d5ccad7 data/prehistoricascension/forge/biome_modifier/add_deepslate_fossil_block.json
+6b62ae758aeca360c9e470011bfeccf1ce610cd0 data/prehistoricascension/worldgen/configured_feature/deepslate_fossil_block.json
+805c6b2ff47b62f27ef44344c7a852b4263a31ae data/prehistoricascension/worldgen/placed_feature/deepslate_fossil_block_placed.json
