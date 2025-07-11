@@ -31,8 +31,9 @@ public class ModBlockLootTables extends BlockLootSubProvider {
         this.dropSelf(ModBlocks.GINKGO_PLANKS.get());
         this.dropSelf(ModBlocks.GINKGO_KNUCKLES.get());
 
+
         this.add(ModBlocks.GINKGO_LEAVES.get(), block ->
-                createLeavesDrops(block, ModBlocks.GINKGO_PLANKS.get(), NORMAL_LEAVES_SAPLING_CHANCES)); // TODO: Change to Sapling!
+                createLeavesDrops(block, ModBlocks.GINKGO_SAPLING.get(), NORMAL_LEAVES_SAPLING_CHANCES));
 
         this.dropSelf(ModBlocks.GINKGO_STAIRS.get());
         this.dropSelf(ModBlocks.GINKGO_BUTTON.get());
@@ -59,6 +60,8 @@ public class ModBlockLootTables extends BlockLootSubProvider {
 
         this.add(ModBlocks.DEEPSLATE_FOSSIL_BLOCK.get(),
                 block -> createCopperLikeOreDrops(ModBlocks.DEEPSLATE_FOSSIL_BLOCK.get(), ModItems.DEEPSLATE_FOSSIL.get()));
+
+        this.dropSelf(ModBlocks.GINKGO_SAPLING.get());
 
 
     }

@@ -46,8 +46,15 @@ public class ModItemModelProvider extends ItemModelProvider {
         simpleItem(ModItems.GINKGO_BOAT);
         simpleItem(ModItems.GINKGO_CHEST_BOAT);
 
+        saplingItem(ModBlocks.GINKGO_SAPLING);
+
     }
 
+    private ItemModelBuilder saplingItem(RegistryObject<Block> item) {
+        return withExistingParent(item.getId().getPath(),
+                new ResourceLocation("item/generated")).texture("layer0",
+                new ResourceLocation(PrehistoricAscension.MOD_ID,"block/" + item.getId().getPath()));
+    }
     public void fenceItem(RegistryObject<Block> block, RegistryObject<Block> baseBlock) {
         this.withExistingParent(ForgeRegistries.BLOCKS.getKey(block.get()).getPath(), mcLoc("block/fence_inventory"))
                 .texture("texture",  new ResourceLocation(PrehistoricAscension.MOD_ID, "block/" + ForgeRegistries.BLOCKS.getKey(baseBlock.get()).getPath()));

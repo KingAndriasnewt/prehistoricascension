@@ -21,6 +21,7 @@ import net.newt.prehistoricascension.PrehistoricAscension;
 import net.newt.prehistoricascension.block.custom.*;
 import net.newt.prehistoricascension.item.ModItems;
 import net.newt.prehistoricascension.util.ModWoodTypes;
+import net.newt.prehistoricascension.worldgen.tree.GinkgoTreeGrower;
 
 import java.util.function.Supplier;
 
@@ -111,6 +112,10 @@ public class ModBlocks {
     public static final RegistryObject<Block> DEEPSLATE_FOSSIL_BLOCK = registerBlock("deepslate_fossil_block",
             () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.DEEPSLATE)
                     .strength(3f).requiresCorrectToolForDrops(), UniformInt.of(1, 1)));
+
+
+    public static final RegistryObject<Block> GINKGO_SAPLING = registerBlock("ginkgo_sapling",
+            () -> new SaplingBlock(new GinkgoTreeGrower(), BlockBehaviour.Properties.copy(Blocks.SPRUCE_SAPLING)));
 
 
 

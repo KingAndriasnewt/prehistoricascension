@@ -1,4 +1,4 @@
-// 1.20.1	2025-07-11T11:01:02.9377842	Item Models: prehistoricascension
+// 1.20.1	2025-07-11T15:34:56.8798938	Item Models: prehistoricascension
 2f86b9c8587cb0a9666b75f49af3772f85bbe503 assets/prehistoricascension/models/item/balaur_skull_fossil.json
 f998988bb60d00630e56bc8f87008361a1d171be assets/prehistoricascension/models/item/cooked_squid.json
 14009200a23a505169901a7bbe8cb66c40481353 assets/prehistoricascension/models/item/crioceratities_dna.json
@@ -12,6 +12,7 @@ b241d9b27cdf5528ae9f34c1d1cd0210d29c67de assets/prehistoricascension/models/item
 d56749160a0ddc102ced1c34c12e5affbc4eb4eb assets/prehistoricascension/models/item/ginkgo_fence_gate.json
 82848b178ee900c02c1a494463bee1dbc58dfa11 assets/prehistoricascension/models/item/ginkgo_hanging_sign.json
 ec486dbe7ed2019c932e25d084cc324fb866bb6c assets/prehistoricascension/models/item/ginkgo_pressure_plate.json
+2329b190a96438e404c6dceb539aa42feb725c62 assets/prehistoricascension/models/item/ginkgo_sapling.json
 ffffc3605d804075468d49bc1596c0c40c7db7d7 assets/prehistoricascension/models/item/ginkgo_sign.json
 32edceb8e9759e7ab8cca0a9bbeb8e2ae80b3689 assets/prehistoricascension/models/item/ginkgo_slab.json
 a4c96ef3a3e81d3660e0c4a3b61da1a66061d52c assets/prehistoricascension/models/item/ginkgo_stairs.json
