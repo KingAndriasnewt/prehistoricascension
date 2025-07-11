@@ -51,9 +51,9 @@ public class ModBoatRenderer extends BoatRenderer {
     }
 
     public Pair<ResourceLocation, ListModel<Boat>> getModelWithLocation(Boat boat) {
-        if (boat instanceof ModBoatEntity modBoat) {
+        if(boat instanceof ModBoatEntity modBoat) {
             return this.boatResources.get(modBoat.getModVariant());
-        } else if (boat instanceof ModChestBoatEntity modChestBoatEntity) {
+        } else if(boat instanceof ModChestBoatEntity modChestBoatEntity) {
             return this.boatResources.get(modChestBoatEntity.getModVariant());
         } else {
             return null;
