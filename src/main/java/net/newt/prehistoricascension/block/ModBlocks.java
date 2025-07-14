@@ -21,6 +21,7 @@ import net.newt.prehistoricascension.PrehistoricAscension;
 import net.newt.prehistoricascension.block.custom.*;
 import net.newt.prehistoricascension.item.ModItems;
 import net.newt.prehistoricascension.util.ModWoodTypes;
+import net.newt.prehistoricascension.worldgen.tree.AncientGinkgoTreeGrower;
 import net.newt.prehistoricascension.worldgen.tree.GinkgoTreeGrower;
 
 import java.util.function.Supplier;
@@ -116,6 +117,26 @@ public class ModBlocks {
 
     public static final RegistryObject<Block> GINKGO_SAPLING = registerBlock("ginkgo_sapling",
             () -> new SaplingBlock(new GinkgoTreeGrower(), BlockBehaviour.Properties.copy(Blocks.SPRUCE_SAPLING)));
+    public static final RegistryObject<Block> ANCIENT_GINKGO_SAPLING = registerBlock("ancient_ginkgo_sapling",
+            () -> new SaplingBlock(new AncientGinkgoTreeGrower(), BlockBehaviour.Properties.copy(Blocks.ACACIA_SAPLING)));
+
+    public static final RegistryObject<Block> ANCIENT_GINKGO_LEAVES = registerBlock("ancient_ginkgo_leaves",
+            () -> new LeavesBlock(BlockBehaviour.Properties.copy(Blocks.ACACIA_LEAVES)){
+                @Override
+                public boolean isFlammable(BlockState state, BlockGetter level, BlockPos pos, Direction direction) {
+                    return true;
+                }
+
+                @Override
+                public int getFlammability(BlockState state, BlockGetter level, BlockPos pos, Direction direction) {
+                    return 60;
+                }
+
+                @Override
+                public int getFireSpreadSpeed(BlockState state, BlockGetter level, BlockPos pos, Direction direction) {
+                    return 30;
+                }
+            });
 
 
 

@@ -46,6 +46,7 @@ public class ModCreativeModTabs {
                     pOutput.accept(ModItems.GINKGO_BOAT.get());
                     pOutput.accept(ModItems.GINKGO_CHEST_BOAT.get());
                     pOutput.accept(ModBlocks.GINKGO_SAPLING.get());
+                    pOutput.accept(ModBlocks.ANCIENT_GINKGO_SAPLING.get());
 
                     pOutput.accept(ModBlocks.GINKGO_LEAVES.get());
 

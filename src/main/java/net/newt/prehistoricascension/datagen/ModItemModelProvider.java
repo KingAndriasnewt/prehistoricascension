@@ -47,6 +47,7 @@ public class ModItemModelProvider extends ItemModelProvider {
         simpleItem(ModItems.GINKGO_CHEST_BOAT);
 
         saplingItem(ModBlocks.GINKGO_SAPLING);
+        saplingItem(ModBlocks.ANCIENT_GINKGO_SAPLING);
 
     }
 

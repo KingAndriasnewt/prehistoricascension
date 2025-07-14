@@ -1,4 +1,6 @@
-// 1.20.1	2025-07-11T15:34:56.883892	Loot Tables
+// 1.20.1	2025-07-14T10:49:31.4052378	Loot Tables
+7a0f6b221ab20ca939269ae81403e49a88549b05 data/prehistoricascension/loot_tables/blocks/ancient_ginkgo_leaves.json
+6d7956ed5b097ab864eb37d72efc612f851abd68 data/prehistoricascension/loot_tables/blocks/ancient_ginkgo_sapling.json
 1c71bd2ea8f1ce06bf294aa88109ede90a800bbc data/prehistoricascension/loot_tables/blocks/deepslate_fossil_block.json
 23e91b87d342176ee3fc9653609edbd600b04c5b data/prehistoricascension/loot_tables/blocks/ginkgo_button.json
 15e948048a9d47e6bed90705000ff6ea7b98d9e7 data/prehistoricascension/loot_tables/blocks/ginkgo_door.json

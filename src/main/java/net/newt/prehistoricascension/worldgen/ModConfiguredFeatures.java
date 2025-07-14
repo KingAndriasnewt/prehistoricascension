@@ -11,7 +11,9 @@ import net.minecraft.world.level.levelgen.feature.Feature;
 import net.minecraft.world.level.levelgen.feature.configurations.FeatureConfiguration;
 import net.minecraft.world.level.levelgen.feature.configurations.OreConfiguration;
 import net.minecraft.world.level.levelgen.feature.configurations.TreeConfiguration;
+import net.minecraft.world.level.levelgen.feature.featuresize.ThreeLayersFeatureSize;
 import net.minecraft.world.level.levelgen.feature.featuresize.TwoLayersFeatureSize;
+import net.minecraft.world.level.levelgen.feature.foliageplacers.AcaciaFoliagePlacer;
 import net.minecraft.world.level.levelgen.feature.foliageplacers.BlobFoliagePlacer;
 import net.minecraft.world.level.levelgen.feature.foliageplacers.FancyFoliagePlacer;
 import net.minecraft.world.level.levelgen.feature.foliageplacers.SpruceFoliagePlacer;
@@ -29,6 +31,7 @@ public class ModConfiguredFeatures {
     public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_DEEPSLATE_FOSSIL_BLOCk_KEY = registerKey("deepslate_fossil_block");
 
     public static final ResourceKey<ConfiguredFeature<?, ?>> GINKGO_KEY = registerKey("ginkgo");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> ANCIENT_GINKGO_KEY = registerKey("ancient_ginkgo");
 
     public static void bootstrap(BootstapContext<ConfiguredFeature<?, ?>> context) {
         RuleTest deepslateReplaceable = new TagMatchTest(BlockTags.DEEPSLATE_ORE_REPLACEABLES);
@@ -47,6 +50,16 @@ public class ModConfiguredFeatures {
                 new SpruceFoliagePlacer(ConstantInt.of(2), ConstantInt.of(1), ConstantInt.of(3)),
 
                 new TwoLayersFeatureSize(1, 0, 2)).build());
+
+
+        register(context, ANCIENT_GINKGO_KEY, Feature.TREE, new TreeConfiguration.TreeConfigurationBuilder(
+                BlockStateProvider.simple(ModBlocks.GINKGO_LOG.get()),
+                new ForkingTrunkPlacer(7, 5, 6),
+
+                BlockStateProvider.simple(ModBlocks.ANCIENT_GINKGO_LEAVES.get()),
+                new AcaciaFoliagePlacer(ConstantInt.of(2), ConstantInt.of(1)),
+
+                new TwoLayersFeatureSize(5, 3, 5)).build());
     }
 
     public static ResourceKey<ConfiguredFeature<?, ?>> registerKey(String name) {

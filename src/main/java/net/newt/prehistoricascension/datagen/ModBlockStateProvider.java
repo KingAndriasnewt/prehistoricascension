@@ -37,6 +37,7 @@ public class ModBlockStateProvider extends BlockStateProvider {
         blockwithitem(ModBlocks.DEEPSLATE_FOSSIL_BLOCK);
 
         leavesBlock(ModBlocks.GINKGO_LEAVES);
+        leavesBlock(ModBlocks.ANCIENT_GINKGO_LEAVES);
 
         stairsBlock(((StairBlock) ModBlocks.GINKGO_STAIRS.get()), blockTexture(ModBlocks.GINKGO_PLANKS.get()));
         slabBlock(((SlabBlock) ModBlocks.GINKGO_SLAB.get()), blockTexture(ModBlocks.GINKGO_PLANKS.get()), blockTexture(ModBlocks.GINKGO_PLANKS.get()));
@@ -56,6 +57,7 @@ public class ModBlockStateProvider extends BlockStateProvider {
         hangingSignBlock(ModBlocks.GINKGO_HANGING_SIGN.get(), ModBlocks.GINKGO_WALL_HANGING_SIGN.get(), blockTexture(ModBlocks.GINKGO_PLANKS.get()));
 
         saplingBlock(ModBlocks.GINKGO_SAPLING);
+        saplingBlock(ModBlocks.ANCIENT_GINKGO_SAPLING);
     }
 
     private void saplingBlock(RegistryObject<Block> blockRegistryObject) {

@@ -62,7 +62,11 @@ public class ModBlockLootTables extends BlockLootSubProvider {
                 block -> createCopperLikeOreDrops(ModBlocks.DEEPSLATE_FOSSIL_BLOCK.get(), ModItems.DEEPSLATE_FOSSIL.get()));
 
         this.dropSelf(ModBlocks.GINKGO_SAPLING.get());
+        this.dropSelf(ModBlocks.ANCIENT_GINKGO_SAPLING.get());
 
+
+        this.add(ModBlocks.ANCIENT_GINKGO_LEAVES.get(), block ->
+                createLeavesDrops(block, ModBlocks.ANCIENT_GINKGO_SAPLING.get(), NORMAL_LEAVES_SAPLING_CHANCES));
 
     }
 
