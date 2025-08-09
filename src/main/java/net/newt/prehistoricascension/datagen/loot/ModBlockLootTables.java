@@ -68,6 +68,10 @@ public class ModBlockLootTables extends BlockLootSubProvider {
         this.add(ModBlocks.ANCIENT_GINKGO_LEAVES.get(), block ->
                 createLeavesDrops(block, ModBlocks.ANCIENT_GINKGO_SAPLING.get(), NORMAL_LEAVES_SAPLING_CHANCES));
 
+
+        this.dropSelf(ModBlocks.CLUSTERED_BROWN_MUSHROOM.get());
+        this.add(ModBlocks.POTTED_CLUSTERED_BROWN_MUSHROOM.get(), createPotFlowerItemTable(ModBlocks.CLUSTERED_BROWN_MUSHROOM.get()));
+
     }
 
     protected LootTable.Builder createCopperLikeOreDrops(Block pBlock, Item item) {

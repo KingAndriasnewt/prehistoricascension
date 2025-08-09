@@ -49,6 +49,7 @@ public class ModItemModelProvider extends ItemModelProvider {
         saplingItem(ModBlocks.GINKGO_SAPLING);
         saplingItem(ModBlocks.ANCIENT_GINKGO_SAPLING);
 
+        simpleBlockItemBlockTexture(ModBlocks.CLUSTERED_BROWN_MUSHROOM);
     }
 
     private ItemModelBuilder saplingItem(RegistryObject<Block> item) {
@@ -80,6 +81,12 @@ public class ModItemModelProvider extends ItemModelProvider {
         return withExistingParent(item.getId().getPath(),
                 new ResourceLocation("item/generated")).texture("layer0",
                 new ResourceLocation(PrehistoricAscension.MOD_ID,"item/" + item.getId().getPath()));
+    }
+
+    private ItemModelBuilder simpleBlockItemBlockTexture(RegistryObject<Block> item) {
+        return withExistingParent(item.getId().getPath(),
+                new ResourceLocation("item/generated")).texture("layer0",
+                new ResourceLocation(PrehistoricAscension.MOD_ID,"block/" + item.getId().getPath()));
     }
 
     public void evenSimplerBlockItem(RegistryObject<Block> block) {

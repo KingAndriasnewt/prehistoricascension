@@ -3,6 +3,8 @@ package net.newt.prehistoricascension;
 import com.mojang.logging.LogUtils;
 import net.minecraft.client.renderer.Sheets;
 import net.minecraft.client.renderer.entity.EntityRenderers;
+import net.minecraft.world.level.block.Blocks;
+import net.minecraft.world.level.block.FlowerPotBlock;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
@@ -20,6 +22,7 @@ import net.newt.prehistoricascension.entity.client.ModBoatRenderer;
 import net.newt.prehistoricascension.item.ModCreativeModTabs;
 import net.newt.prehistoricascension.item.ModItems;
 import net.newt.prehistoricascension.util.ModWoodTypes;
+import net.newt.prehistoricascension.worldgen.tree.ModTrunkPlacerTypes;
 import org.slf4j.Logger;
 
 // The value here should match an entry in the META-INF/mods.toml file
@@ -42,15 +45,16 @@ public class PrehistoricAscension
 
 
         modEventBus.addListener(this::commonSetup);
-
+        ModTrunkPlacerTypes.register(modEventBus);
 
         MinecraftForge.EVENT_BUS.register(this);
         modEventBus.addListener(this::addCreative);
     }
 
     private void commonSetup(final FMLCommonSetupEvent event){
-
-
+        event.enqueueWork(() -> {
+            ((FlowerPotBlock) Blocks.FLOWER_POT).addPlant(ModBlocks.CLUSTERED_BROWN_MUSHROOM.getId(), ModBlocks.POTTED_CLUSTERED_BROWN_MUSHROOM);
+        });
     }
 
     // Add the example block item to the building blocks tab

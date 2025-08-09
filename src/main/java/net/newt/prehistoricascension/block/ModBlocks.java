@@ -138,7 +138,11 @@ public class ModBlocks {
                 }
             });
 
-
+    public static final RegistryObject<Block> CLUSTERED_BROWN_MUSHROOM = registerBlock("clustered_brown_mushroom",
+            () -> new ClusteredBrownMushroomBlock(BlockBehaviour.Properties.copy(Blocks.BROWN_MUSHROOM).noOcclusion().noCollission()));
+    public static final RegistryObject<Block> POTTED_CLUSTERED_BROWN_MUSHROOM = BLOCKS.register("potted_clustered_brown_mushroom",
+            () -> new FlowerPotBlock(() -> ((FlowerPotBlock) Blocks.FLOWER_POT), ModBlocks.CLUSTERED_BROWN_MUSHROOM,
+                    BlockBehaviour.Properties.copy(Blocks.POTTED_BROWN_MUSHROOM).noOcclusion()));
 
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {

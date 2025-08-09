@@ -58,6 +58,11 @@ public class ModBlockStateProvider extends BlockStateProvider {
 
         saplingBlock(ModBlocks.GINKGO_SAPLING);
         saplingBlock(ModBlocks.ANCIENT_GINKGO_SAPLING);
+
+        simpleBlockWithItem(ModBlocks.CLUSTERED_BROWN_MUSHROOM.get(), models().cross(blockTexture(ModBlocks.CLUSTERED_BROWN_MUSHROOM.get()).getPath(),
+                blockTexture(ModBlocks.CLUSTERED_BROWN_MUSHROOM.get())).renderType("cutout"));
+        simpleBlockWithItem(ModBlocks.POTTED_CLUSTERED_BROWN_MUSHROOM.get(), models().singleTexture("potted_clustered_brown_mushroom", new ResourceLocation("flower_pot_cross"), "plant",
+                blockTexture(ModBlocks.CLUSTERED_BROWN_MUSHROOM.get())).renderType("cutout"));
     }
 
     private void saplingBlock(RegistryObject<Block> blockRegistryObject) {

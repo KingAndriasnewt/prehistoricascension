@@ -1,6 +1,6 @@
-// 1.20.1	2025-07-14T10:49:31.4092361	Registries
+// 1.20.1	2025-07-19T12:55:45.2014118	Registries
 c586145fcfabd4f15b2bcdc148bbcc872d5ccad7 data/prehistoricascension/forge/biome_modifier/add_deepslate_fossil_block.json
-cc8be8fff5809fdb4d4e42baef449168722786ff data/prehistoricascension/worldgen/configured_feature/ancient_ginkgo.json
+c8135a289bd626868c39cd49f168cfebf4023ba0 data/prehistoricascension/worldgen/configured_feature/ancient_ginkgo.json
 6b62ae758aeca360c9e470011bfeccf1ce610cd0 data/prehistoricascension/worldgen/configured_feature/deepslate_fossil_block.json
-9740612fc02900892e9caf0b973925c1d2f703ef data/prehistoricascension/worldgen/configured_feature/ginkgo.json
+5c288511b867360b8959e41a6233651ef3ecebd8 data/prehistoricascension/worldgen/configured_feature/ginkgo.json
 805c6b2ff47b62f27ef44344c7a852b4263a31ae data/prehistoricascension/worldgen/placed_feature/deepslate_fossil_block_placed.json

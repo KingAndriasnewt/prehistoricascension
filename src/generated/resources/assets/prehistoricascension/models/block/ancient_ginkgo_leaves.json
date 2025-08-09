@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/leaves",
+  "render_type": "minecraft:cutout",
+  "textures": {
+    "all": "prehistoricascension:block/ancient_ginkgo_leaves"
+  }
+}

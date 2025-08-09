@@ -6,6 +6,7 @@ import net.minecraft.resources.ResourceKey;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.tags.BlockTags;
 import net.minecraft.util.valueproviders.ConstantInt;
+import net.minecraft.world.level.block.grower.SpruceTreeGrower;
 import net.minecraft.world.level.levelgen.feature.ConfiguredFeature;
 import net.minecraft.world.level.levelgen.feature.Feature;
 import net.minecraft.world.level.levelgen.feature.configurations.FeatureConfiguration;
@@ -24,6 +25,7 @@ import net.minecraft.world.level.levelgen.structure.templatesystem.RuleTest;
 import net.minecraft.world.level.levelgen.structure.templatesystem.TagMatchTest;
 import net.newt.prehistoricascension.PrehistoricAscension;
 import net.newt.prehistoricascension.block.ModBlocks;
+import net.newt.prehistoricascension.worldgen.tree.custom.AncientGinkgoTrunkPlacer;
 
 import java.util.List;
 
@@ -49,12 +51,12 @@ public class ModConfiguredFeatures {
                 BlockStateProvider.simple(ModBlocks.GINKGO_LEAVES.get()),
                 new SpruceFoliagePlacer(ConstantInt.of(2), ConstantInt.of(1), ConstantInt.of(3)),
 
-                new TwoLayersFeatureSize(1, 0, 2)).build());
+                new TwoLayersFeatureSize(4, 3, 5)).build());
 
 
         register(context, ANCIENT_GINKGO_KEY, Feature.TREE, new TreeConfiguration.TreeConfigurationBuilder(
                 BlockStateProvider.simple(ModBlocks.GINKGO_LOG.get()),
-                new ForkingTrunkPlacer(7, 5, 6),
+                new AncientGinkgoTrunkPlacer(7, 5, 6),
 
                 BlockStateProvider.simple(ModBlocks.ANCIENT_GINKGO_LEAVES.get()),
                 new AcaciaFoliagePlacer(ConstantInt.of(2), ConstantInt.of(1)),
