@@ -63,6 +63,22 @@ public class ModBlockStateProvider extends BlockStateProvider {
                 blockTexture(ModBlocks.CLUSTERED_BROWN_MUSHROOM.get())).renderType("cutout"));
         simpleBlockWithItem(ModBlocks.POTTED_CLUSTERED_BROWN_MUSHROOM.get(), models().singleTexture("potted_clustered_brown_mushroom", new ResourceLocation("flower_pot_cross"), "plant",
                 blockTexture(ModBlocks.CLUSTERED_BROWN_MUSHROOM.get())).renderType("cutout"));
+
+        simpleBlockWithItem(ModBlocks.WEEPING_TAN_MUSHROOM.get(), models().cross(blockTexture(ModBlocks.WEEPING_TAN_MUSHROOM.get()).getPath(),
+                blockTexture(ModBlocks.WEEPING_TAN_MUSHROOM.get())).renderType("cutout"));
+        simpleBlockWithItem(ModBlocks.POTTED_WEEPING_TAN_MUSHROOM.get(), models().singleTexture("potted_weeping_tan_mushroom", new ResourceLocation("flower_pot_cross"), "plant",
+                blockTexture(ModBlocks.WEEPING_TAN_MUSHROOM.get())).renderType("cutout"));
+
+        simpleBlockWithItem(ModBlocks.GREEN_BELL_MUSHROOM.get(), models().cross(blockTexture(ModBlocks.GREEN_BELL_MUSHROOM.get()).getPath(),
+                blockTexture(ModBlocks.GREEN_BELL_MUSHROOM.get())).renderType("cutout"));
+        simpleBlockWithItem(ModBlocks.POTTED_GREEN_BELL_MUSHROOM.get(), models().singleTexture("potted_green_bell_mushroom", new ResourceLocation("flower_pot_cross"), "plant",
+                blockTexture(ModBlocks.GREEN_BELL_MUSHROOM.get())).renderType("cutout"));
+
+        simpleBlockWithItem(ModBlocks.PURPLE_TOP_HAT_MUSHROOM.get(), models().cross(blockTexture(ModBlocks.PURPLE_TOP_HAT_MUSHROOM.get()).getPath(),
+                blockTexture(ModBlocks.PURPLE_TOP_HAT_MUSHROOM.get())).renderType("cutout"));
+
+        simpleBlockWithItem(ModBlocks.ORANGE_TOP_MUSHROOM.get(), models().cross(blockTexture(ModBlocks.ORANGE_TOP_MUSHROOM.get()).getPath(),
+                blockTexture(ModBlocks.ORANGE_TOP_MUSHROOM.get())).renderType("cutout"));
     }
 
     private void saplingBlock(RegistryObject<Block> blockRegistryObject) {

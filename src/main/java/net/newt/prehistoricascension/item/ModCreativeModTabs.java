@@ -51,6 +51,10 @@ public class ModCreativeModTabs {
                     pOutput.accept(ModBlocks.GINKGO_LEAVES.get());
 
                     pOutput.accept(ModBlocks.CLUSTERED_BROWN_MUSHROOM.get());
+                    pOutput.accept(ModBlocks.WEEPING_TAN_MUSHROOM.get());
+                    pOutput.accept(ModBlocks.GREEN_BELL_MUSHROOM.get());
+                    pOutput.accept(ModBlocks.PURPLE_TOP_HAT_MUSHROOM.get());
+                    pOutput.accept(ModBlocks.ORANGE_TOP_MUSHROOM.get());
 
 
 

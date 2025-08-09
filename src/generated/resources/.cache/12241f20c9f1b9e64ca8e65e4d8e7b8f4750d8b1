@@ -1,4 +1,4 @@
-// 1.20.1	2025-08-09T10:15:44.9162468	Item Models: prehistoricascension
+// 1.20.1	2025-08-09T11:29:26.669024	Item Models: prehistoricascension
 22010f6a5abe1e1d1da7cb28222b86405c51291e assets/prehistoricascension/models/item/ancient_ginkgo_sapling.json
 2f86b9c8587cb0a9666b75f49af3772f85bbe503 assets/prehistoricascension/models/item/balaur_skull_fossil.json
 3441df2fd6b067eb44f88bac94412a385c3eec9b assets/prehistoricascension/models/item/clustered_brown_mushroom.json
@@ -19,4 +19,8 @@ ffffc3605d804075468d49bc1596c0c40c7db7d7 assets/prehistoricascension/models/item
 32edceb8e9759e7ab8cca0a9bbeb8e2ae80b3689 assets/prehistoricascension/models/item/ginkgo_slab.json
 a4c96ef3a3e81d3660e0c4a3b61da1a66061d52c assets/prehistoricascension/models/item/ginkgo_stairs.json
 27919fdbcd78f3eed8b6c1d5770dcc7b265accba assets/prehistoricascension/models/item/ginkgo_trapdoor.json
+04747404e9df792bc679ba5a3849eab5facfb273 assets/prehistoricascension/models/item/green_bell_mushroom.json
+c79cc213531743c1ac7f96c69ed3665c4e5e49e0 assets/prehistoricascension/models/item/orange_top_mushroom.json
+3da85fa69d1454f1804766a7f81d07a6a3007547 assets/prehistoricascension/models/item/purple_top_hat_mushroom.json
 62b4861db24e5ff488d8621116a94c323fa59a95 assets/prehistoricascension/models/item/raw_squid.json
+189a4863e1eaa644102c51f571a82051f190eb1d assets/prehistoricascension/models/item/weeping_tan_mushroom.json

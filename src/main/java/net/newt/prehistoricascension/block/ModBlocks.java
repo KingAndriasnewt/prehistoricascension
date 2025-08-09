@@ -5,7 +5,6 @@ import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.util.valueproviders.UniformInt;
-import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.BlockGetter;
@@ -19,6 +18,7 @@ import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 import net.newt.prehistoricascension.PrehistoricAscension;
 import net.newt.prehistoricascension.block.custom.*;
+import net.newt.prehistoricascension.block.custom.mushrooms.*;
 import net.newt.prehistoricascension.item.ModItems;
 import net.newt.prehistoricascension.util.ModWoodTypes;
 import net.newt.prehistoricascension.worldgen.tree.AncientGinkgoTreeGrower;
@@ -143,6 +143,24 @@ public class ModBlocks {
     public static final RegistryObject<Block> POTTED_CLUSTERED_BROWN_MUSHROOM = BLOCKS.register("potted_clustered_brown_mushroom",
             () -> new FlowerPotBlock(() -> ((FlowerPotBlock) Blocks.FLOWER_POT), ModBlocks.CLUSTERED_BROWN_MUSHROOM,
                     BlockBehaviour.Properties.copy(Blocks.POTTED_BROWN_MUSHROOM).noOcclusion()));
+
+    public static final RegistryObject<Block> PURPLE_TOP_HAT_MUSHROOM = registerBlock("purple_top_hat_mushroom",
+            () -> new PurpleTopHatMushroomBlock(BlockBehaviour.Properties.copy(Blocks.BROWN_MUSHROOM).noOcclusion().noCollission()));
+
+    public static final RegistryObject<Block> WEEPING_TAN_MUSHROOM = registerBlock("weeping_tan_mushroom",
+            () -> new WeepingTanMushroomBlock(BlockBehaviour.Properties.copy(Blocks.BROWN_MUSHROOM).noOcclusion().noCollission()));
+    public static final RegistryObject<Block> POTTED_WEEPING_TAN_MUSHROOM = BLOCKS.register("potted_weeping_tan_mushroom",
+            () -> new FlowerPotBlock(() -> ((FlowerPotBlock) Blocks.FLOWER_POT), ModBlocks.WEEPING_TAN_MUSHROOM,
+                    BlockBehaviour.Properties.copy(Blocks.POTTED_BROWN_MUSHROOM).noOcclusion()));
+
+    public static final RegistryObject<Block> GREEN_BELL_MUSHROOM = registerBlock("green_bell_mushroom",
+            () -> new GreenBellMushroomBlock(BlockBehaviour.Properties.copy(Blocks.BROWN_MUSHROOM).noOcclusion().noCollission()));
+    public static final RegistryObject<Block> POTTED_GREEN_BELL_MUSHROOM = BLOCKS.register("potted_green_bell_mushroom",
+            () -> new FlowerPotBlock(() -> ((FlowerPotBlock) Blocks.FLOWER_POT), ModBlocks.GREEN_BELL_MUSHROOM,
+                    BlockBehaviour.Properties.copy(Blocks.POTTED_BROWN_MUSHROOM).noOcclusion()));
+
+    public static final RegistryObject<Block> ORANGE_TOP_MUSHROOM = registerBlock("orange_top_mushroom",
+            () -> new OrangeTopMushroomBlock(BlockBehaviour.Properties.copy(Blocks.BROWN_MUSHROOM).noOcclusion().noCollission()));
 
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {

@@ -50,6 +50,11 @@ public class ModItemModelProvider extends ItemModelProvider {
         saplingItem(ModBlocks.ANCIENT_GINKGO_SAPLING);
 
         simpleBlockItemBlockTexture(ModBlocks.CLUSTERED_BROWN_MUSHROOM);
+        simpleBlockItemBlockTexture(ModBlocks.WEEPING_TAN_MUSHROOM);
+        simpleBlockItemBlockTexture(ModBlocks.GREEN_BELL_MUSHROOM);
+        simpleBlockItemBlockTexture(ModBlocks.ORANGE_TOP_MUSHROOM);
+        simpleBlockItemBlockTexture(ModBlocks.PURPLE_TOP_HAT_MUSHROOM);
+
     }
 
     private ItemModelBuilder saplingItem(RegistryObject<Block> item) {

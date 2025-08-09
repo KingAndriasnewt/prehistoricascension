@@ -54,6 +54,8 @@ public class PrehistoricAscension
     private void commonSetup(final FMLCommonSetupEvent event){
         event.enqueueWork(() -> {
             ((FlowerPotBlock) Blocks.FLOWER_POT).addPlant(ModBlocks.CLUSTERED_BROWN_MUSHROOM.getId(), ModBlocks.POTTED_CLUSTERED_BROWN_MUSHROOM);
+            ((FlowerPotBlock) Blocks.FLOWER_POT).addPlant(ModBlocks.GREEN_BELL_MUSHROOM.getId(), ModBlocks.POTTED_GREEN_BELL_MUSHROOM);
+            ((FlowerPotBlock) Blocks.FLOWER_POT).addPlant(ModBlocks.WEEPING_TAN_MUSHROOM.getId(), ModBlocks.POTTED_WEEPING_TAN_MUSHROOM);
         });
     }
 

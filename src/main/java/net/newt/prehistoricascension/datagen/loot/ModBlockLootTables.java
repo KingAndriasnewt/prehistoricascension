@@ -71,6 +71,12 @@ public class ModBlockLootTables extends BlockLootSubProvider {
 
         this.dropSelf(ModBlocks.CLUSTERED_BROWN_MUSHROOM.get());
         this.add(ModBlocks.POTTED_CLUSTERED_BROWN_MUSHROOM.get(), createPotFlowerItemTable(ModBlocks.CLUSTERED_BROWN_MUSHROOM.get()));
+        this.dropSelf(ModBlocks.GREEN_BELL_MUSHROOM.get());
+        this.add(ModBlocks.POTTED_GREEN_BELL_MUSHROOM.get(), createPotFlowerItemTable(ModBlocks.GREEN_BELL_MUSHROOM.get()));
+        this.dropSelf(ModBlocks.WEEPING_TAN_MUSHROOM.get());
+        this.add(ModBlocks.POTTED_WEEPING_TAN_MUSHROOM.get(), createPotFlowerItemTable(ModBlocks.WEEPING_TAN_MUSHROOM.get()));
+        this.dropSelf(ModBlocks.PURPLE_TOP_HAT_MUSHROOM.get());
+        this.dropSelf(ModBlocks.ORANGE_TOP_MUSHROOM.get());
 
     }
 

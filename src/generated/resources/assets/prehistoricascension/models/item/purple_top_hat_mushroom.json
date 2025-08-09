@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "prehistoricascension:block/purple_top_hat_mushroom"
+  }
+}

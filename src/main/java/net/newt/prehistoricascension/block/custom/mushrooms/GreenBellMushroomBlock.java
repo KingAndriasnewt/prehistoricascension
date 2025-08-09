@@ -1,4 +1,4 @@
-package net.newt.prehistoricascension.block.custom;
+package net.newt.prehistoricascension.block.custom.mushrooms;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.world.level.BlockGetter;
@@ -9,12 +9,12 @@ import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.phys.shapes.Shapes;
 import net.minecraft.world.phys.shapes.VoxelShape;
 
-public class ClusteredBrownMushroomBlock extends MushroomBlock {
+public class GreenBellMushroomBlock extends MushroomBlock {
 
-    private static final VoxelShape SHAPE = Block.box(3, 0, 3, 13, 7, 13);
+    private static final VoxelShape SHAPE = Block.box(5, 0, 5, 10, 7, 10);
 
-    public ClusteredBrownMushroomBlock(Properties properties) {
-        super(null, properties);
+    public GreenBellMushroomBlock(Properties properties) {
+        super(properties, null);
     }
 
     @Override
