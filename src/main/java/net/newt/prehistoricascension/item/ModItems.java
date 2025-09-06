@@ -1,5 +1,6 @@
 package net.newt.prehistoricascension.item;
 
+import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.HangingSignItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.SignItem;
@@ -37,6 +38,9 @@ public class ModItems {
 
     public static final RegistryObject<Item> GINKGO_KNUCKLES_ITEM = ITEMS.register("ginkgo_knuckles",
             () -> new GinkgoKnucklesItem(ModBlocks.GINKGO_KNUCKLES.get(), new Item.Properties()));
+
+//    public static final RegistryObject<Item> DUTCHMANS_PIPE_ITEM = ITEMS.register("dutchmans_pipe",
+//            () -> new BlockItem(ModBlocks.DUTCHMANS_PIPE.get(), new Item.Properties()));
 
     public static final RegistryObject<Item> GINKGO_BOAT = ITEMS.register("ginkgo_boat",
             () -> new ModBoatItem(false, ModBoatEntity.Type.GINKGO,new Item.Properties()));

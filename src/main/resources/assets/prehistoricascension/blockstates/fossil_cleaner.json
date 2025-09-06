@@ -1,0 +1,8 @@
+{
+  "variants": {
+    "facing=north": { "model": "prehistoricascension:block/fossil_cleaner" },
+    "facing=south": { "model": "prehistoricascension:block/fossil_cleaner", "y": 180 },
+    "facing=east": { "model": "prehistoricascension:block/fossil_cleaner", "y": 90 },
+    "facing=west": { "model": "prehistoricascension:block/fossil_cleaner", "y": 270 }
+  }
+}

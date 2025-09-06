@@ -18,6 +18,7 @@
   "block.prehistoricascension.ginkgo_planks": "Ginkgo Planks",
   "block.prehistoricascension.ginkgo_leaves": "Ginkgo Leaves",
   "block.prehistoricascension.ancient_ginkgo_leaves": "Ginkgo Leaves",
+  "block.prehistoricascension.dutchmans_pipe": "Dutchmans Pipe",
 
   "block.prehistoricascension.ginkgo_stairs": "Ginkgo Stairs",
   "block.prehistoricascension.ginkgo_slab": "Ginkgo Slab",
@@ -44,6 +45,8 @@
 
   "entity.prehistoricascension.mod_chest_boat": "Boat With Chest",
 
+
+  "block.prehistoricascension.fossil_cleaner": "Fossil Cleaner",
 
   "creativetab.pa_items": "Prehistoric Ascension"
 }

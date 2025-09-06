@@ -49,6 +49,7 @@ public class ModCreativeModTabs {
                     pOutput.accept(ModBlocks.ANCIENT_GINKGO_SAPLING.get());
 
                     pOutput.accept(ModBlocks.GINKGO_LEAVES.get());
+//                    pOutput.accept(ModItems.DUTCHMANS_PIPE_ITEM.get());
 
                     pOutput.accept(ModBlocks.CLUSTERED_BROWN_MUSHROOM.get());
                     pOutput.accept(ModBlocks.WEEPING_TAN_MUSHROOM.get());

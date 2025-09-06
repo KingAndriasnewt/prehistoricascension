@@ -11,6 +11,7 @@ import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.state.BlockState;
+import net.minecraft.world.level.block.state.StateDefinition;
 import net.minecraft.world.level.block.state.properties.BlockSetType;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
@@ -110,6 +111,7 @@ public class ModBlocks {
             () -> new GinkgoKnucklesBlock(BlockBehaviour.Properties.copy(Blocks.SPRUCE_PLANKS).noOcclusion()));
 
 
+
     public static final RegistryObject<Block> DEEPSLATE_FOSSIL_BLOCK = registerBlock("deepslate_fossil_block",
             () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.DEEPSLATE)
                     .strength(3f).requiresCorrectToolForDrops(), UniformInt.of(1, 1)));
@@ -162,6 +164,12 @@ public class ModBlocks {
     public static final RegistryObject<Block> ORANGE_TOP_MUSHROOM = registerBlock("orange_top_mushroom",
             () -> new OrangeTopMushroomBlock(BlockBehaviour.Properties.copy(Blocks.BROWN_MUSHROOM).noOcclusion().noCollission()));
 
+//    public static final RegistryObject<Block> DUTCHMANS_PIPE = BLOCKS.register("dutchmans_pipe",
+//            () -> new DutchmansPipeBlock(BlockBehaviour.Properties.copy(Blocks.VINE).noOcclusion()));
+
+
+    public static final RegistryObject<Block> FOSSIL_CLEANER = registerBlock("fossil_cleaner",
+            () -> new FossilCleanerBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).noOcclusion().strength(2.0F)));
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);
@@ -172,9 +180,6 @@ public class ModBlocks {
     private static <T extends Block> RegistryObject<Item> registerBlockItem(String name, RegistryObject<T> block) {
         return ModItems.ITEMS.register(name, () -> new BlockItem(block.get(), new Item.Properties()));
     }
-
-
-
 
     public static void register(IEventBus eventBus) {
         BLOCKS.register(eventBus);
