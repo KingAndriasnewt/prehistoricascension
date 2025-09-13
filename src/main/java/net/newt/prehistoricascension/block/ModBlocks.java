@@ -13,6 +13,8 @@ import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.StateDefinition;
 import net.minecraft.world.level.block.state.properties.BlockSetType;
+import net.minecraft.world.level.material.MapColor;
+import net.minecraft.world.level.material.PushReaction;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -20,6 +22,7 @@ import net.minecraftforge.registries.RegistryObject;
 import net.newt.prehistoricascension.PrehistoricAscension;
 import net.newt.prehistoricascension.block.custom.*;
 import net.newt.prehistoricascension.block.custom.mushrooms.*;
+import net.newt.prehistoricascension.block.custom.plants.HorsetailsBlock;
 import net.newt.prehistoricascension.item.ModItems;
 import net.newt.prehistoricascension.util.ModWoodTypes;
 import net.newt.prehistoricascension.worldgen.tree.AncientGinkgoTreeGrower;
@@ -164,12 +167,18 @@ public class ModBlocks {
     public static final RegistryObject<Block> ORANGE_TOP_MUSHROOM = registerBlock("orange_top_mushroom",
             () -> new OrangeTopMushroomBlock(BlockBehaviour.Properties.copy(Blocks.BROWN_MUSHROOM).noOcclusion().noCollission()));
 
-//    public static final RegistryObject<Block> DUTCHMANS_PIPE = BLOCKS.register("dutchmans_pipe",
-//            () -> new DutchmansPipeBlock(BlockBehaviour.Properties.copy(Blocks.VINE).noOcclusion()));
 
+    public static final RegistryObject<Block> CLUBMOSS = registerBlock("clubmoss",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.MOSS_BLOCK)));
+
+    public static final RegistryObject<Block> HORSETAILS = registerBlock("horsetails",
+            () -> new HorsetailsBlock(BlockBehaviour.Properties.copy(Blocks.GRASS).noOcclusion().noCollission()));
 
     public static final RegistryObject<Block> FOSSIL_CLEANER = registerBlock("fossil_cleaner",
             () -> new FossilCleanerBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).noOcclusion().strength(2.0F)));
+
+    public static final RegistryObject<Block> DUTCHMANS_PIPE = registerBlock("dutchmans_pipe",
+            () -> new DutchmansPipeBlock(BlockBehaviour.Properties.copy(Blocks.VINE).noOcclusion()));
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);

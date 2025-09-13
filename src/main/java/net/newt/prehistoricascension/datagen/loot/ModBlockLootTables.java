@@ -30,6 +30,11 @@ public class ModBlockLootTables extends BlockLootSubProvider {
         this.dropSelf(ModBlocks.STRIPPED_GINKGO_WOOD.get());
         this.dropSelf(ModBlocks.GINKGO_PLANKS.get());
         this.dropSelf(ModBlocks.GINKGO_KNUCKLES.get());
+        this.dropSelf(ModBlocks.CLUBMOSS.get());
+        this.dropSelf(ModBlocks.HORSETAILS.get());
+
+        this.dropSelf(ModBlocks.FOSSIL_CLEANER.get());
+        this.dropSelf(ModBlocks.DUTCHMANS_PIPE.get());
 
 
         this.add(ModBlocks.GINKGO_LEAVES.get(), block ->

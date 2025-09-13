@@ -22,10 +22,16 @@ public class ModItemModelProvider extends ItemModelProvider {
     protected void registerModels() {
         simpleItem(ModItems.BALAUR_SKULL_FOSSIL);
         simpleItem(ModItems.DEEPSLATE_FOSSIL);
+
         simpleItem(ModItems.CRIOCERATITIES_SHELL);
+
         simpleItem(ModItems.RAW_SQUID);
         simpleItem(ModItems.COOKED_SQUID);
+
         simpleItem(ModItems.CRIOCERATITIES_DNA);
+        simpleItem(ModItems.BALAUR_DNA);
+
+        simpleItem(ModItems.BALAUR_EGG);
 
         fenceItem(ModBlocks.GINKGO_FENCE, ModBlocks.GINKGO_PLANKS);
         buttonItem(ModBlocks.GINKGO_BUTTON, ModBlocks.GINKGO_PLANKS);
@@ -54,6 +60,8 @@ public class ModItemModelProvider extends ItemModelProvider {
         simpleBlockItemBlockTexture(ModBlocks.GREEN_BELL_MUSHROOM);
         simpleBlockItemBlockTexture(ModBlocks.ORANGE_TOP_MUSHROOM);
         simpleBlockItemBlockTexture(ModBlocks.PURPLE_TOP_HAT_MUSHROOM);
+
+        simpleBlockItemBlockTexture(ModBlocks.HORSETAILS);
 
     }
 

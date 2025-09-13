@@ -40,12 +40,18 @@ public class ModItems {
             () -> new GinkgoKnucklesItem(ModBlocks.GINKGO_KNUCKLES.get(), new Item.Properties()));
 
 //    public static final RegistryObject<Item> DUTCHMANS_PIPE_ITEM = ITEMS.register("dutchmans_pipe",
-//            () -> new BlockItem(ModBlocks.DUTCHMANS_PIPE.get(), new Item.Properties()));
+//    () -> new BlockItem(ModBlocks.DUTCHMANS_PIPE.get(), new Item.Properties()));
 
     public static final RegistryObject<Item> GINKGO_BOAT = ITEMS.register("ginkgo_boat",
             () -> new ModBoatItem(false, ModBoatEntity.Type.GINKGO,new Item.Properties()));
     public static final RegistryObject<Item> GINKGO_CHEST_BOAT = ITEMS.register("ginkgo_chest_boat",
             () -> new ModBoatItem(true, ModBoatEntity.Type.GINKGO,new Item.Properties()));
+
+    public static final RegistryObject<Item> BALAUR_DNA = ITEMS.register("balaur_dna",
+            () -> new Item(new Item.Properties()));
+
+    public static final RegistryObject<Item> BALAUR_EGG = ITEMS.register("balaur_egg",
+            () -> new Item(new Item.Properties()));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);

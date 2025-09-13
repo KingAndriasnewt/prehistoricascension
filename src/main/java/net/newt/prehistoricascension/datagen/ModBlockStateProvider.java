@@ -79,6 +79,13 @@ public class ModBlockStateProvider extends BlockStateProvider {
 
         simpleBlockWithItem(ModBlocks.ORANGE_TOP_MUSHROOM.get(), models().cross(blockTexture(ModBlocks.ORANGE_TOP_MUSHROOM.get()).getPath(),
                 blockTexture(ModBlocks.ORANGE_TOP_MUSHROOM.get())).renderType("cutout"));
+
+        blockwithitem(ModBlocks.CLUBMOSS);
+
+        simpleBlockWithItem(ModBlocks.HORSETAILS.get(), models().cross(blockTexture(ModBlocks.HORSETAILS.get()).getPath(),
+                blockTexture(ModBlocks.HORSETAILS.get())).renderType("cutout"));
+
+
     }
 
     private void saplingBlock(RegistryObject<Block> blockRegistryObject) {

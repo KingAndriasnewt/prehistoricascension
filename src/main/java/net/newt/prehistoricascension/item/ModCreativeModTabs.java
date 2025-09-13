@@ -18,14 +18,21 @@ public class ModCreativeModTabs {
             () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.BALAUR_SKULL_FOSSIL.get()))
                     .title(Component.translatable("creativetab.pa_items"))
                     .displayItems((pParameters, pOutput) -> {
+                    pOutput.accept(ModBlocks.FOSSIL_CLEANER.get());
+
                     pOutput.accept(ModBlocks.DEEPSLATE_FOSSIL_BLOCK.get());
 
                     pOutput.accept(ModItems.DEEPSLATE_FOSSIL.get());
                     pOutput.accept(ModItems.BALAUR_SKULL_FOSSIL.get());
+                    pOutput.accept(ModItems.BALAUR_DNA.get());
                     pOutput.accept(ModItems.CRIOCERATITIES_DNA.get());
                     pOutput.accept(ModItems.RAW_SQUID.get());
                     pOutput.accept(ModItems.COOKED_SQUID.get());
                     pOutput.accept(ModItems.CRIOCERATITIES_SHELL.get());
+
+                    pOutput.accept(ModItems.BALAUR_EGG.get());
+
+                    pOutput.accept(ModBlocks.DUTCHMANS_PIPE.get());
 
                     pOutput.accept(ModBlocks.GINKGO_LOG.get());
                     pOutput.accept(ModBlocks.GINKGO_WOOD.get());
@@ -49,7 +56,6 @@ public class ModCreativeModTabs {
                     pOutput.accept(ModBlocks.ANCIENT_GINKGO_SAPLING.get());
 
                     pOutput.accept(ModBlocks.GINKGO_LEAVES.get());
-//                    pOutput.accept(ModItems.DUTCHMANS_PIPE_ITEM.get());
 
                     pOutput.accept(ModBlocks.CLUSTERED_BROWN_MUSHROOM.get());
                     pOutput.accept(ModBlocks.WEEPING_TAN_MUSHROOM.get());
@@ -57,6 +63,8 @@ public class ModCreativeModTabs {
                     pOutput.accept(ModBlocks.PURPLE_TOP_HAT_MUSHROOM.get());
                     pOutput.accept(ModBlocks.ORANGE_TOP_MUSHROOM.get());
 
+                    pOutput.accept(ModBlocks.CLUBMOSS.get());
+                    pOutput.accept(ModBlocks.HORSETAILS.get());
 
 
 

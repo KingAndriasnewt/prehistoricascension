@@ -4,7 +4,12 @@
   "item.prehistoricascension.crioceratities_shell": "Crioceratities shell",
   "item.prehistoricascension.raw_squid": "Raw Squid",
   "item.prehistoricascension.cooked_squid": "Cooked Squid",
+
   "item.prehistoricascension.crioceratities_dna": "Crioceratites DNA",
+  "item.prehistoricascension.balaur_dna": "Balaur DNA",
+
+
+  "item.prehistoricascension.balaur_egg": "Balaur Egg",
 
   "item.prehistoricascension.ginkgo_boat": "Ginkgo Boat",
   "item.prehistoricascension.ginkgo_chest_boat": "Ginkgo Chest Boat",
@@ -18,6 +23,7 @@
   "block.prehistoricascension.ginkgo_planks": "Ginkgo Planks",
   "block.prehistoricascension.ginkgo_leaves": "Ginkgo Leaves",
   "block.prehistoricascension.ancient_ginkgo_leaves": "Ginkgo Leaves",
+
   "block.prehistoricascension.dutchmans_pipe": "Dutchmans Pipe",
 
   "block.prehistoricascension.ginkgo_stairs": "Ginkgo Stairs",
@@ -41,6 +47,9 @@
   "block.prehistoricascension.weeping_tan_mushroom": "Weeping Tan Mushroom",
   "block.prehistoricascension.orange_top_mushroom": "Orange Top Mushroom",
   "block.prehistoricascension.purple_top_hat_mushroom": "Purple Top Hat Mushroom",
+
+  "block.prehistoricascension.clubmoss": "Clubmoss",
+  "block.prehistoricascension.horsetails": "Horsetails",
 
 
   "entity.prehistoricascension.mod_chest_boat": "Boat With Chest",
