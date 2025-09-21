@@ -1,4 +1,4 @@
-package net.newt.prehistoricascension.block.custom;
+package net.newt.prehistoricascension.block.custom.plants;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;

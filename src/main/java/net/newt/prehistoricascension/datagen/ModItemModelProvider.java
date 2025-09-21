@@ -63,6 +63,9 @@ public class ModItemModelProvider extends ItemModelProvider {
 
         simpleBlockItemBlockTexture(ModBlocks.HORSETAILS);
 
+        simpleItem(ModItems.BUCKET_OF_SAURICHTHYS);
+
+
     }
 
     private ItemModelBuilder saplingItem(RegistryObject<Block> item) {

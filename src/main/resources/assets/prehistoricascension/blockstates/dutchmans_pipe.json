@@ -1,24 +1,44 @@
 {
   "multipart": [
     {
-      "when": { "north": "true" },
-      "apply": { "model": "prehistoricascension:block/dutchmans_pipe_north" }
+      "when": {
+        "north": "true"
+      },
+      "apply": {
+        "model": "prehistoricascension:block/dutchmans_pipe_north"
+      }
     },
     {
-      "when": { "east": "true" },
-      "apply": { "model": "prehistoricascension:block/dutchmans_pipe_east" }
+      "when": {
+        "east": "true"
+      },
+      "apply": {
+        "model": "prehistoricascension:block/dutchmans_pipe_east"
+      }
     },
     {
-      "when": { "south": "true" },
-      "apply": { "model": "prehistoricascension:block/dutchmans_pipe_south" }
+      "when": {
+        "south": "true"
+      },
+      "apply": {
+        "model": "prehistoricascension:block/dutchmans_pipe_south"
+      }
     },
     {
-      "when": { "west": "true" },
-      "apply": { "model": "prehistoricascension:block/dutchmans_pipe_west" }
+      "when": {
+        "west": "true"
+      },
+      "apply": {
+        "model": "prehistoricascension:block/dutchmans_pipe_west"
+      }
     },
     {
-      "when": { "up": "true" },
-      "apply": { "model": "prehistoricascension:block/dutchmans_pipe_up" }
+      "when": {
+        "up": "true"
+      },
+      "apply": {
+        "model": "prehistoricascension:block/dutchmans_pipe_up"
+      }
     }
   ]
 }

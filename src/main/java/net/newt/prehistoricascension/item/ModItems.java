@@ -1,9 +1,9 @@
 package net.newt.prehistoricascension.item;
 
-import net.minecraft.world.item.BlockItem;
-import net.minecraft.world.item.HangingSignItem;
-import net.minecraft.world.item.Item;
-import net.minecraft.world.item.SignItem;
+import net.minecraft.sounds.SoundEvents;
+import net.minecraft.world.item.*;
+import net.minecraft.world.level.material.Fluids;
+import net.minecraftforge.common.ForgeSpawnEggItem;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -11,6 +11,7 @@ import net.minecraftforge.registries.RegistryObject;
 import net.newt.prehistoricascension.PrehistoricAscension;
 import net.newt.prehistoricascension.block.ModBlocks;
 import net.newt.prehistoricascension.block.custom.GinkgoKnucklesItem;
+import net.newt.prehistoricascension.entities.EntityTypes;
 import net.newt.prehistoricascension.entity.custom.ModBoatEntity;
 import net.newt.prehistoricascension.item.custom.ModBoatItem;
 
@@ -52,6 +53,15 @@ public class ModItems {
 
     public static final RegistryObject<Item> BALAUR_EGG = ITEMS.register("balaur_egg",
             () -> new Item(new Item.Properties()));
+
+    public static final RegistryObject<Item> SAURICHTHYS_SPAWN_EGG = ITEMS.register("saurichthys_spawn_egg",
+            () -> new ForgeSpawnEggItem(EntityTypes.SAURICHTHYS_ENTITY, 0x454080, 0xbebddc, new Item.Properties().stacksTo(64)));
+
+    public static final RegistryObject<Item> BUCKET_OF_SAURICHTHYS = ITEMS.register("bucket_of_saurichthys",
+            () -> new MobBucketItem(() -> EntityTypes.SAURICHTHYS_ENTITY.get(),
+                    () -> Fluids.WATER,
+                    () -> SoundEvents.BUCKET_EMPTY_FISH,
+                    new Item.Properties().stacksTo(1)));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);

@@ -66,6 +66,9 @@ public class ModCreativeModTabs {
                     pOutput.accept(ModBlocks.CLUBMOSS.get());
                     pOutput.accept(ModBlocks.HORSETAILS.get());
 
+                    pOutput.accept(ModItems.SAURICHTHYS_SPAWN_EGG.get());
+
+
 
 
                     })

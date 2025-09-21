@@ -17,6 +17,7 @@ import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.newt.prehistoricascension.block.ModBlocks;
 import net.newt.prehistoricascension.block.entity.ModBlockEntities;
+import net.newt.prehistoricascension.entities.EntityTypes;
 import net.newt.prehistoricascension.entity.ModEntities;
 import net.newt.prehistoricascension.entity.client.ModBoatRenderer;
 import net.newt.prehistoricascension.item.ModCreativeModTabs;
@@ -24,6 +25,7 @@ import net.newt.prehistoricascension.item.ModItems;
 import net.newt.prehistoricascension.util.ModWoodTypes;
 import net.newt.prehistoricascension.worldgen.tree.ModTrunkPlacerTypes;
 import org.slf4j.Logger;
+import software.bernie.geckolib.GeckoLib;
 
 // The value here should match an entry in the META-INF/mods.toml file
 @Mod(PrehistoricAscension.MOD_ID)
@@ -42,6 +44,7 @@ public class PrehistoricAscension
         ModCreativeModTabs.register(modEventBus);
         ModBlockEntities.register(modEventBus);
         ModEntities.register(modEventBus);
+        EntityTypes.ENTITY_TYPES.register(modEventBus);
 
 
         modEventBus.addListener(this::commonSetup);
@@ -49,6 +52,8 @@ public class PrehistoricAscension
 
         MinecraftForge.EVENT_BUS.register(this);
         modEventBus.addListener(this::addCreative);
+
+        GeckoLib.initialize();
     }
 
     private void commonSetup(final FMLCommonSetupEvent event){

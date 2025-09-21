@@ -8,13 +8,10 @@
   "item.prehistoricascension.crioceratities_dna": "Crioceratites DNA",
   "item.prehistoricascension.balaur_dna": "Balaur DNA",
 
-
   "item.prehistoricascension.balaur_egg": "Balaur Egg",
 
   "item.prehistoricascension.ginkgo_boat": "Ginkgo Boat",
   "item.prehistoricascension.ginkgo_chest_boat": "Ginkgo Chest Boat",
-
-
 
   "block.prehistoricascension.ginkgo_log": "Ginkgo Log",
   "block.prehistoricascension.ginkgo_wood": "Ginkgo Wood",
@@ -51,11 +48,16 @@
   "block.prehistoricascension.clubmoss": "Clubmoss",
   "block.prehistoricascension.horsetails": "Horsetails",
 
+  "item.prehistoricascension.bucket_of_saurichthys": "Saurichthys Bucket",
+
+  "item.prehistoricascension.saurichthys_spawn_egg": "Saurichthys Spawn Egg",
 
   "entity.prehistoricascension.mod_chest_boat": "Boat With Chest",
 
-
   "block.prehistoricascension.fossil_cleaner": "Fossil Cleaner",
+
+  "entity.prehistoricascension.saurichthys": "Saurichthys",
+
 
   "creativetab.pa_items": "Prehistoric Ascension"
 }
