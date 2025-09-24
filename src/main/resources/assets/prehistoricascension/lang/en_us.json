@@ -2,11 +2,15 @@
   "item.prehistoricascension.balaur_skull_fossil": "Balaur Skull Fossil",
   "item.prehistoricascension.deepslate_fossil": "Deepslate Fossil",
   "item.prehistoricascension.crioceratities_shell": "Crioceratities shell",
+  \
   "item.prehistoricascension.raw_squid": "Raw Squid",
   "item.prehistoricascension.cooked_squid": "Cooked Squid",
+  "item.prehistoricascension.raw_saurichthys": "Raw Saurichthys",
+  "item.prehistoricascension.cooked_saurichthys": "Cooked Saurichthys",
 
   "item.prehistoricascension.crioceratities_dna": "Crioceratites DNA",
   "item.prehistoricascension.balaur_dna": "Balaur DNA",
+  "item.prehistoricascension.saurichthys_dna": "Saurichthys DNA",
 
   "item.prehistoricascension.balaur_egg": "Balaur Egg",
 

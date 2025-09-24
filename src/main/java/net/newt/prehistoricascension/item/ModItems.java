@@ -29,6 +29,13 @@ public class ModItems {
             () -> new Item(new Item.Properties().food(ModFoods.COOKED_SQUID)));
     public static final RegistryObject<Item> CRIOCERATITIES_DNA = ITEMS.register("crioceratities_dna",
             () -> new Item(new Item.Properties()));
+
+    public static final RegistryObject<Item> BALAUR_DNA = ITEMS.register("balaur_dna",
+            () -> new Item(new Item.Properties()));
+
+    public static final RegistryObject<Item> SAURICHTHYS_DNA = ITEMS.register("saurichthys_dna",
+            () -> new Item(new Item.Properties()));
+
     public static final RegistryObject<Item> DEEPSLATE_FOSSIL = ITEMS.register("deepslate_fossil",
             () -> new Item(new Item.Properties()));
 
@@ -48,9 +55,6 @@ public class ModItems {
     public static final RegistryObject<Item> GINKGO_CHEST_BOAT = ITEMS.register("ginkgo_chest_boat",
             () -> new ModBoatItem(true, ModBoatEntity.Type.GINKGO,new Item.Properties()));
 
-    public static final RegistryObject<Item> BALAUR_DNA = ITEMS.register("balaur_dna",
-            () -> new Item(new Item.Properties()));
-
     public static final RegistryObject<Item> BALAUR_EGG = ITEMS.register("balaur_egg",
             () -> new Item(new Item.Properties()));
 
@@ -62,6 +66,12 @@ public class ModItems {
                     () -> Fluids.WATER,
                     () -> SoundEvents.BUCKET_EMPTY_FISH,
                     new Item.Properties().stacksTo(1)));
+
+    public static final RegistryObject<Item> RAW_SAURICHTHYS = ITEMS.register("raw_saurichthys",
+            () -> new Item(new Item.Properties().food(ModFoods.RAW_SAURICHTHYS)));
+
+    public static final RegistryObject<Item> COOKED_SAURICHTHYS = ITEMS.register("cooked_saurichthys",
+            () -> new Item(new Item.Properties().food(ModFoods.COOKED_SAURICHTHYS)));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);

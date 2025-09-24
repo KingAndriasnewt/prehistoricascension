@@ -24,10 +24,16 @@ public class ModCreativeModTabs {
 
                     pOutput.accept(ModItems.DEEPSLATE_FOSSIL.get());
                     pOutput.accept(ModItems.BALAUR_SKULL_FOSSIL.get());
+
                     pOutput.accept(ModItems.BALAUR_DNA.get());
                     pOutput.accept(ModItems.CRIOCERATITIES_DNA.get());
+                    pOutput.accept(ModItems.SAURICHTHYS_DNA.get());
+
                     pOutput.accept(ModItems.RAW_SQUID.get());
                     pOutput.accept(ModItems.COOKED_SQUID.get());
+                    pOutput.accept(ModItems.RAW_SAURICHTHYS.get());
+                    pOutput.accept(ModItems.COOKED_SAURICHTHYS.get());
+
                     pOutput.accept(ModItems.CRIOCERATITIES_SHELL.get());
 
                     pOutput.accept(ModItems.BALAUR_EGG.get());

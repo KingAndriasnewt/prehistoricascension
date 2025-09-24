@@ -27,9 +27,12 @@ public class ModItemModelProvider extends ItemModelProvider {
 
         simpleItem(ModItems.RAW_SQUID);
         simpleItem(ModItems.COOKED_SQUID);
+        simpleItem(ModItems.RAW_SAURICHTHYS);
+        simpleItem(ModItems.COOKED_SAURICHTHYS);
 
         simpleItem(ModItems.CRIOCERATITIES_DNA);
         simpleItem(ModItems.BALAUR_DNA);
+        simpleItem(ModItems.SAURICHTHYS_DNA);
 
         simpleItem(ModItems.BALAUR_EGG);
 
