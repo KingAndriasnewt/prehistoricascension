@@ -1,6 +1,7 @@
 package net.newt.prehistoricascension;
 
 import com.mojang.logging.LogUtils;
+import net.minecraft.client.gui.screens.MenuScreens;
 import net.minecraft.client.renderer.Sheets;
 import net.minecraft.client.renderer.entity.EntityRenderers;
 import net.minecraft.world.level.block.Blocks;
@@ -22,6 +23,9 @@ import net.newt.prehistoricascension.entity.ModEntities;
 import net.newt.prehistoricascension.entity.client.ModBoatRenderer;
 import net.newt.prehistoricascension.item.ModCreativeModTabs;
 import net.newt.prehistoricascension.item.ModItems;
+import net.newt.prehistoricascension.recipe.ModRecipes;
+import net.newt.prehistoricascension.screen.FossilCleanerScreen;
+import net.newt.prehistoricascension.screen.ModMenuTypes;
 import net.newt.prehistoricascension.util.ModWoodTypes;
 import net.newt.prehistoricascension.worldgen.tree.ModTrunkPlacerTypes;
 import org.slf4j.Logger;
@@ -44,6 +48,8 @@ public class PrehistoricAscension
         ModCreativeModTabs.register(modEventBus);
         ModBlockEntities.register(modEventBus);
         ModEntities.register(modEventBus);
+        ModMenuTypes.register(modEventBus);
+        ModRecipes.register(modEventBus);
         EntityTypes.ENTITY_TYPES.register(modEventBus);
 
 
@@ -84,6 +90,8 @@ public class PrehistoricAscension
 
             EntityRenderers.register(ModEntities.MOD_BOAT.get(), pContext -> new ModBoatRenderer(pContext, false));
             EntityRenderers.register(ModEntities.MOD_CHEST_BOAT.get(), pContext -> new ModBoatRenderer(pContext, true));
+
+            MenuScreens.register(ModMenuTypes.FOSSIL_CLEANER_MENU.get(), FossilCleanerScreen::new);
         }
     }
 }

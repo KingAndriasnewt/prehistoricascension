@@ -24,6 +24,10 @@ public class ModBlockEntities {
                     BlockEntityType.Builder.of(ModHangingSignBlockEntity::new,
                             ModBlocks.GINKGO_HANGING_SIGN.get(), ModBlocks.GINKGO_WALL_HANGING_SIGN.get()).build(null));
 
+    public static final RegistryObject<BlockEntityType<FossilCleanerBlockEntity>> FOSSIL_CLEANER =
+            BLOCK_ENTITIES.register("fossil_cleaner", () ->
+                    BlockEntityType.Builder.of(FossilCleanerBlockEntity::new,
+                            ModBlocks.FOSSIL_CLEANER.get()).build(null));
 
     public static void register(IEventBus eventBus) {
         BLOCK_ENTITIES.register(eventBus);

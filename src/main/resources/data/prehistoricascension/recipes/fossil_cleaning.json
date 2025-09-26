@@ -1,0 +1,11 @@
+{
+  "type": "prehistoricascension:fossil_cleaning",
+  "ingredients": [
+    {
+      "item": "minecraft:water_bucket"
+    },
+    {
+      "item": "prehistoricascension:deepslate_fossil"
+    }
+  ]
+}

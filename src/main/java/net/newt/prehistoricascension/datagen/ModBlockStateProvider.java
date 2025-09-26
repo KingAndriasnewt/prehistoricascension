@@ -85,6 +85,8 @@ public class ModBlockStateProvider extends BlockStateProvider {
         simpleBlockWithItem(ModBlocks.HORSETAILS.get(), models().cross(blockTexture(ModBlocks.HORSETAILS.get()).getPath(),
                 blockTexture(ModBlocks.HORSETAILS.get())).renderType("cutout"));
 
+//        simpleBlock(ModBlocks.FOSSIL_CLEANER.get(),
+//                new ModelFile.UncheckedModelFile(modLoc("block/fossil_cleaner")));
 
     }
 
