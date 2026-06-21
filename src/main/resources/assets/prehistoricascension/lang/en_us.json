@@ -1,8 +1,10 @@
 {
   "item.prehistoricascension.balaur_skull_fossil": "Balaur Skull Fossil",
   "item.prehistoricascension.deepslate_fossil": "Deepslate Fossil",
+  "item.prehistoricascension.saurichthys_fossil": "Saurichthys Fossil",
+
   "item.prehistoricascension.crioceratities_shell": "Crioceratities shell",
-  \
+
   "item.prehistoricascension.raw_squid": "Raw Squid",
   "item.prehistoricascension.cooked_squid": "Cooked Squid",
   "item.prehistoricascension.raw_saurichthys": "Raw Saurichthys",
@@ -55,12 +57,16 @@
   "item.prehistoricascension.bucket_of_saurichthys": "Saurichthys Bucket",
 
   "item.prehistoricascension.saurichthys_spawn_egg": "Saurichthys Spawn Egg",
+  "item.prehistoricascension.balaur_spawn_egg": "Balaur Spawn Egg",
+  "item.prehistoricascension.thyreosaurus_spawn_egg": "Thyreosaurus Spawn Egg",
 
   "entity.prehistoricascension.mod_chest_boat": "Boat With Chest",
 
   "block.prehistoricascension.fossil_cleaner": "Fossil Cleaner",
 
   "entity.prehistoricascension.saurichthys": "Saurichthys",
+  "entity.prehistoricascension.balaur": "Balaur",
+  "entity.prehistoricascension.thyreosaurus": "Thyreosaurus",
 
 
   "creativetab.pa_items": "Prehistoric Ascension"

@@ -1,4 +1,4 @@
-// 1.20.1	2025-09-24T18:03:59.9967548	Item Models: prehistoricascension
+// 1.20.1	2025-09-25T10:40:15.6771789	Item Models: prehistoricascension
 22010f6a5abe1e1d1da7cb28222b86405c51291e assets/prehistoricascension/models/item/ancient_ginkgo_sapling.json
 d03e8bb293f90c7264d876e88a746395e24a3cc4 assets/prehistoricascension/models/item/balaur_dna.json
 f02de31ddf74a4c1ec5d4c34b9f9572853df12bd assets/prehistoricascension/models/item/balaur_egg.json
@@ -30,4 +30,5 @@ c79cc213531743c1ac7f96c69ed3665c4e5e49e0 assets/prehistoricascension/models/item
 a552ba7d189d2760bbd84e978c7f8325ae85c339 assets/prehistoricascension/models/item/raw_saurichthys.json
 62b4861db24e5ff488d8621116a94c323fa59a95 assets/prehistoricascension/models/item/raw_squid.json
 09ac987e0e371d8868bc28aeda0d79187622e5ed assets/prehistoricascension/models/item/saurichthys_dna.json
+ac6b88506f076964c1eeebd4dc785373e176d793 assets/prehistoricascension/models/item/saurichthys_fossil.json
 189a4863e1eaa644102c51f571a82051f190eb1d assets/prehistoricascension/models/item/weeping_tan_mushroom.json

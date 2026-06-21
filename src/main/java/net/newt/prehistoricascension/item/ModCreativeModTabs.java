@@ -24,6 +24,7 @@ public class ModCreativeModTabs {
 
                     pOutput.accept(ModItems.DEEPSLATE_FOSSIL.get());
                     pOutput.accept(ModItems.BALAUR_SKULL_FOSSIL.get());
+                    pOutput.accept(ModItems.SAURICHTHYS_FOSSIL.get());
 
                     pOutput.accept(ModItems.BALAUR_DNA.get());
                     pOutput.accept(ModItems.CRIOCERATITIES_DNA.get());
@@ -73,6 +74,8 @@ public class ModCreativeModTabs {
                     pOutput.accept(ModBlocks.HORSETAILS.get());
 
                     pOutput.accept(ModItems.SAURICHTHYS_SPAWN_EGG.get());
+                    pOutput.accept(ModItems.BALAUR_SPAWN_EGG.get());
+                    pOutput.accept(ModItems.THYREOSAURUS_SPAWN_EGG.get());
 
 
 

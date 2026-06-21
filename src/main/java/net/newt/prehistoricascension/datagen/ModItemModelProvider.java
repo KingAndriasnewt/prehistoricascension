@@ -22,6 +22,7 @@ public class ModItemModelProvider extends ItemModelProvider {
     protected void registerModels() {
         simpleItem(ModItems.BALAUR_SKULL_FOSSIL);
         simpleItem(ModItems.DEEPSLATE_FOSSIL);
+        simpleItem(ModItems.SAURICHTHYS_FOSSIL);
 
         simpleItem(ModItems.CRIOCERATITIES_SHELL);
 

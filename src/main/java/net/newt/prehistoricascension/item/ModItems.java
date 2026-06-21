@@ -19,8 +19,15 @@ public class ModItems {
     public static final DeferredRegister<Item> ITEMS =
             DeferredRegister.create(ForgeRegistries.ITEMS, PrehistoricAscension.MOD_ID);
 
+    public static final RegistryObject<Item> DEEPSLATE_FOSSIL = ITEMS.register("deepslate_fossil",
+            () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> BALAUR_SKULL_FOSSIL = ITEMS.register("balaur_skull_fossil",
             () -> new Item(new Item.Properties()));
+
+    public static final RegistryObject<Item> SAURICHTHYS_FOSSIL = ITEMS.register("saurichthys_fossil",
+            () -> new Item(new Item.Properties()));
+
+
     public static final RegistryObject<Item> CRIOCERATITIES_SHELL = ITEMS.register("crioceratities_shell",
             () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> RAW_SQUID = ITEMS.register("raw_squid",
@@ -36,8 +43,7 @@ public class ModItems {
     public static final RegistryObject<Item> SAURICHTHYS_DNA = ITEMS.register("saurichthys_dna",
             () -> new Item(new Item.Properties()));
 
-    public static final RegistryObject<Item> DEEPSLATE_FOSSIL = ITEMS.register("deepslate_fossil",
-            () -> new Item(new Item.Properties()));
+
 
     public static final RegistryObject<Item> GINKGO_SIGN = ITEMS.register("ginkgo_sign",
             () -> new SignItem(new Item.Properties().stacksTo(16), ModBlocks.GINKGO_SIGN.get(), ModBlocks.GINKGO_WALL_SIGN.get()));
@@ -60,6 +66,12 @@ public class ModItems {
 
     public static final RegistryObject<Item> SAURICHTHYS_SPAWN_EGG = ITEMS.register("saurichthys_spawn_egg",
             () -> new ForgeSpawnEggItem(EntityTypes.SAURICHTHYS_ENTITY, 0x454080, 0xbebddc, new Item.Properties().stacksTo(64)));
+
+    public static final RegistryObject<Item> BALAUR_SPAWN_EGG = ITEMS.register("balaur_spawn_egg",
+            () -> new ForgeSpawnEggItem(EntityTypes.BALAUR_ENTITY, 0x454080, 0xbebddc, new Item.Properties().stacksTo(64)));
+
+    public static final RegistryObject<Item> THYREOSAURUS_SPAWN_EGG = ITEMS.register("thyreosaurus_spawn_egg",
+            () -> new ForgeSpawnEggItem(EntityTypes.THYREOSAURUS_ENTITY, 0x454080, 0xbebddc, new Item.Properties().stacksTo(64)));
 
     public static final RegistryObject<Item> BUCKET_OF_SAURICHTHYS = ITEMS.register("bucket_of_saurichthys",
             () -> new MobBucketItem(() -> EntityTypes.SAURICHTHYS_ENTITY.get(),

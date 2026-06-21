@@ -1,44 +1,48 @@
-package net.newt.prehistoricascension.entities.saurichthys;
+package net.newt.prehistoricascension.entities.balaur;
 
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.network.syncher.EntityDataAccessor;
 import net.minecraft.network.syncher.EntityDataSerializers;
 import net.minecraft.network.syncher.SynchedEntityData;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.server.level.ServerLevel;
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.world.DifficultyInstance;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResult;
 import net.minecraft.world.damagesource.DamageSource;
-import net.minecraft.world.entity.EntityType;
-import net.minecraft.world.entity.Mob;
-import net.minecraft.world.entity.MobSpawnType;
-import net.minecraft.world.entity.SpawnGroupData;
+import net.minecraft.world.entity.*;
 import net.minecraft.world.entity.ai.attributes.AttributeSupplier;
 import net.minecraft.world.entity.ai.attributes.Attributes;
+import net.minecraft.world.entity.ai.control.MoveControl;
+import net.minecraft.world.entity.ai.goal.*;
 import net.minecraft.world.entity.animal.AbstractSchoolingFish;
+import net.minecraft.world.entity.animal.Animal;
 import net.minecraft.world.entity.animal.Bucketable;
+import net.minecraft.world.entity.animal.Chicken;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.ServerLevelAccessor;
+import net.minecraftforge.fml.common.Mod;
+import net.newt.prehistoricascension.item.ModFoods;
 import net.newt.prehistoricascension.item.ModItems;
 import software.bernie.geckolib.animatable.GeoEntity;
 import software.bernie.geckolib.core.animatable.GeoAnimatable;
 import software.bernie.geckolib.core.animatable.instance.AnimatableInstanceCache;
 import software.bernie.geckolib.core.animation.*;
+import software.bernie.geckolib.core.animation.AnimationState;
 import software.bernie.geckolib.core.object.PlayState;
 import software.bernie.geckolib.util.GeckoLibUtil;
 import javax.annotation.Nullable;
 import java.util.Random;
 
-public class Saurichthys extends AbstractSchoolingFish implements GeoEntity {
-    private static final EntityDataAccessor<Boolean> FROM_BUCKET = SynchedEntityData.defineId(Saurichthys.class, EntityDataSerializers.BOOLEAN);
-    private static final EntityDataAccessor<Integer> DATA_VARIANT = SynchedEntityData.defineId(Saurichthys.class, EntityDataSerializers.INT);
+public class Balaur extends Animal implements GeoEntity {
+    private static final EntityDataAccessor<Integer> DATA_VARIANT = SynchedEntityData.defineId(Balaur.class, EntityDataSerializers.INT);
     public static final String VARIANT_TAG = "Variant";
 
-    public Saurichthys(EntityType<? extends Saurichthys> type, Level level) {
+    public Balaur(EntityType<? extends Balaur> type, Level level) {
         super(type, level);
         this.noCulling = true;
     }
@@ -46,101 +50,92 @@ public class Saurichthys extends AbstractSchoolingFish implements GeoEntity {
     protected void defineSynchedData() {
         super.defineSynchedData();
         this.entityData.define(DATA_VARIANT, 0);
-        this.entityData.define(FROM_BUCKET, false);
+    }
+    @Override
+    public boolean canMate(Animal animal) {
+        return false;
+    }
+
+    @Override
+    public AgeableMob getBreedOffspring(ServerLevel serverLevel, AgeableMob ageableMob) {
+        return null;
     }
 
     public static AttributeSupplier.Builder createAttributes() {
         return Mob.createMobAttributes()
-                .add(Attributes.MAX_HEALTH, 6.0D);
+                .add(Attributes.MAX_HEALTH, 6.0D)
+                .add(Attributes.MOVEMENT_SPEED, 0.25D);
     }
 
-    // Save the variant to the bucket tag
-    public void saveToBucketTag(ItemStack pStack) {
-        Bucketable.saveDefaultDataToBucketTag(this, pStack);
-        CompoundTag compoundTag = pStack.getOrCreateTag();
-        compoundTag.putInt(VARIANT_TAG, this.getVariant());
-    }
-
-    // Load the variant from the bucket tag
-    public void loadFromBucketTag(CompoundTag pTag) {
-        Bucketable.loadDefaultDataFromBucketTag(this, pTag);
-        if (pTag.contains(VARIANT_TAG)) {
-            this.setVariant(pTag.getInt(VARIANT_TAG));
-        }
-    }
-
-    public int getMaxSchoolSize() {
-        return 8;
-    }
-
-    public ItemStack getBucketItemStack() {
-        return new ItemStack(ModItems.BUCKET_OF_SAURICHTHYS.get());
+    public void registerGoals() {
+        this.goalSelector.addGoal(0, new FloatGoal(this));
+        this.goalSelector.addGoal(1, new PanicGoal(this, 1F));
+        this.goalSelector.addGoal(2, new BreedGoal(this, 1.0D));
+        this.goalSelector.addGoal(3, new FollowParentGoal(this, 1.1D));
+        this.goalSelector.addGoal(4, new WaterAvoidingRandomStrollGoal(this, 1.0D));
+        this.goalSelector.addGoal(5, new LookAtPlayerGoal(this, Player.class, 6.0F));
+        this.goalSelector.addGoal(6, new RandomLookAroundGoal(this));
     }
 
     public SoundEvent getAmbientSound() {
-        return SoundEvents.SALMON_AMBIENT;
+        return SoundEvents.CHICKEN_AMBIENT;
     }
 
     public SoundEvent getDeathSound() {
-        return SoundEvents.SALMON_DEATH;
+        return SoundEvents.CHICKEN_DEATH;
     }
 
     public SoundEvent getHurtSound(DamageSource p_29795_) {
-        return SoundEvents.SALMON_HURT;
+        return SoundEvents.CHICKEN_HURT;
     }
 
-    public SoundEvent getFlopSound() {
-        return SoundEvents.SALMON_FLOP;
-    }
 
-    public boolean fromBucket() {
-        return this.entityData.get(FROM_BUCKET);
-    }
 
-    public void setFromBucket(boolean pFromBucket) {
-        this.entityData.set(FROM_BUCKET, pFromBucket);
-    }
 
-    public boolean requiresCustomPersistence() {
-        return super.requiresCustomPersistence() || this.fromBucket();
-    }
 
     @Override
     @Nullable
     public SpawnGroupData finalizeSpawn(ServerLevelAccessor serverLevelAccessor, DifficultyInstance instance, MobSpawnType spawnType, @Nullable SpawnGroupData data, @Nullable CompoundTag tag) {
         Random random = new Random();
-        this.setVariant(random.nextInt(SaurichthysModel.Variant.values().length));
+        this.setVariant(random.nextInt(BalaurModel.Variant.values().length));
         return super.finalizeSpawn(serverLevelAccessor, instance, spawnType, data, tag);
     }
 
-    public InteractionResult mobInteract(Player pPlayer, InteractionHand pHand) {
-        return Bucketable.bucketMobPickup(pPlayer, pHand, this).orElse(super.mobInteract(pPlayer, pHand));
-    }
 
-    public SoundEvent getPickupSound() {
-        return SoundEvents.BUCKET_FILL_AXOLOTL;
-    }
+
+
 
     public ResourceLocation getTextureLocation() {
-        return SaurichthysModel.Variant.variantFromOrdinal(getVariant()).resourceLocation;
+        return BalaurModel.Variant.variantFromOrdinal(getVariant()).resourceLocation;
     }
 
 
     private final AnimatableInstanceCache geoCache = GeckoLibUtil.createInstanceCache(this);
 
-    private <T extends GeoAnimatable> PlayState predicate(AnimationState<T> tAnimationState) {
+    protected <T extends GeoAnimatable> PlayState predicate(AnimationState<T> tAnimationState) {
+        double x = this.getX() - this.xo;
+        double z = this.getZ() - this.zo;
+        boolean isMoving = (x * x + z * z) > 0.0001;
         double currentSpeed = this.getDeltaMovement().lengthSqr();
         double speedThreshold = 0.01;
 
         AnimationController<T> controller = tAnimationState.getController();
 
-        if (currentSpeed > speedThreshold) {
-            controller.setAnimation(RawAnimation.begin().then("saurichthys_swimsprint", Animation.LoopType.LOOP));
-            controller.setAnimationSpeed(1.1);
-        } else {
-            controller.setAnimation(RawAnimation.begin().then("saurichthys_swim", Animation.LoopType.LOOP));
-            controller.setAnimationSpeed(1.1);
+        if (!this.onGround()) {
+            controller.setAnimation(RawAnimation.begin().then("balaur_idle", Animation.LoopType.LOOP));
+            controller.setAnimationSpeed(1.5);
         }
+        if (isMoving) {
+            if (currentSpeed > speedThreshold) {
+                controller.setAnimation(RawAnimation.begin().then("balaur_walk", Animation.LoopType.LOOP));
+                controller.setAnimationSpeed(0.5);
+            }
+        } else {
+            controller.setAnimation(RawAnimation.begin().then("balaur_idle", Animation.LoopType.LOOP));
+            controller.setAnimationSpeed(0.8);
+        }
+
+
         return PlayState.CONTINUE;
     }
 
@@ -156,7 +151,7 @@ public class Saurichthys extends AbstractSchoolingFish implements GeoEntity {
     }
 
     public ResourceLocation getTextureResource() {
-        return SaurichthysModel.Variant.variantFromOrdinal(getVariant()).resourceLocation;
+        return BalaurModel.Variant.variantFromOrdinal(getVariant()).resourceLocation;
     }
 
     public int getVariant() {
@@ -179,6 +174,5 @@ public class Saurichthys extends AbstractSchoolingFish implements GeoEntity {
         if (tag.contains(VARIANT_TAG)) {
             this.setVariant(tag.getInt(VARIANT_TAG));
         }
-        this.setFromBucket(tag.getBoolean("FromBucket"));
     }
 }
