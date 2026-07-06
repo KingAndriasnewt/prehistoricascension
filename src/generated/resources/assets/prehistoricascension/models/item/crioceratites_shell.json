@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "prehistoricascension:item/crioceratities_dna"
+    "layer0": "prehistoricascension:item/crioceratites_shell"
   }
 }

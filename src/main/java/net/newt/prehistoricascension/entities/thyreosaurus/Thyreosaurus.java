@@ -55,7 +55,7 @@ public class Thyreosaurus extends Animal implements GeoEntity {
 
     public static AttributeSupplier.Builder createAttributes() {
         return Mob.createMobAttributes()
-                .add(Attributes.MAX_HEALTH, 30D)
+                .add(Attributes.MAX_HEALTH, 35D)
                 .add(Attributes.MOVEMENT_SPEED, 0.25D)
                 .add(Attributes.ARMOR, 2D)
                 .add(Attributes.ARMOR_TOUGHNESS, 4D);
@@ -118,7 +118,7 @@ public class Thyreosaurus extends Animal implements GeoEntity {
         if (isMoving) {
             if (!this.onGround()) {
                 if (currentSpeed > speedThreshold) {
-                    controller.setAnimation(RawAnimation.begin().then("idle", Animation.LoopType.LOOP));
+                    controller.setAnimation(RawAnimation.begin().then("walk", Animation.LoopType.LOOP));
                 } else {
                     controller.setAnimation(RawAnimation.begin().then("swim", Animation.LoopType.LOOP));
                 }

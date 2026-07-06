@@ -2,6 +2,8 @@
   "replace": false,
   "values": [
     "prehistoricascension:balaur_skull_fossil",
-    "prehistoricascension:crioceratities_shell"
+    "prehistoricascension:crioceratites_shell",
+    "prehistoricascension:thyreosaurus_skull_fossil",
+    "prehistoricascension:saurichthys_fossil"
   ]
 }

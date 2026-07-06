@@ -23,17 +23,19 @@ public class ModItemModelProvider extends ItemModelProvider {
         simpleItem(ModItems.BALAUR_SKULL_FOSSIL);
         simpleItem(ModItems.DEEPSLATE_FOSSIL);
         simpleItem(ModItems.SAURICHTHYS_FOSSIL);
+        simpleItem(ModItems.THYREOSAURUS_SKULL_FOSSIL);
 
-        simpleItem(ModItems.CRIOCERATITIES_SHELL);
+        simpleItem(ModItems.CRIOCERATITES_SHELL);
 
         simpleItem(ModItems.RAW_SQUID);
         simpleItem(ModItems.COOKED_SQUID);
         simpleItem(ModItems.RAW_SAURICHTHYS);
         simpleItem(ModItems.COOKED_SAURICHTHYS);
 
-        simpleItem(ModItems.CRIOCERATITIES_DNA);
+        simpleItem(ModItems.CRIOCERATITES_DNA);
         simpleItem(ModItems.BALAUR_DNA);
         simpleItem(ModItems.SAURICHTHYS_DNA);
+        simpleItem(ModItems.THYREOSAURUS_DNA);
 
         simpleItem(ModItems.BALAUR_EGG);
 
@@ -68,7 +70,6 @@ public class ModItemModelProvider extends ItemModelProvider {
         simpleBlockItemBlockTexture(ModBlocks.HORSETAILS);
 
         simpleItem(ModItems.BUCKET_OF_SAURICHTHYS);
-
 
     }
 

@@ -24,7 +24,10 @@ public class ThyreosaurusModel extends GeoModel<Thyreosaurus> {
 
 
     public static final ResourceLocation MODEL = new ResourceLocation(PrehistoricAscension.MOD_ID, "geo/thyreosaurus/thyreosaurus.geo.json");
+    public static final ResourceLocation BABY_MODEL = new ResourceLocation(PrehistoricAscension.MOD_ID, "geo/thyreosaurus/thyreosaurusbaby.geo.json");
     public static final ResourceLocation ANIMATION = new ResourceLocation(PrehistoricAscension.MOD_ID, "animations/thyreosaurus/thyreosaurus.animation.json");
+
+
 
     @Override
     public ResourceLocation getModelResource(Thyreosaurus object) {

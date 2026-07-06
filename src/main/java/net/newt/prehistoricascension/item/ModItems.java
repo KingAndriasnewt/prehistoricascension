@@ -23,21 +23,26 @@ public class ModItems {
             () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> BALAUR_SKULL_FOSSIL = ITEMS.register("balaur_skull_fossil",
             () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> THYREOSAURUS_SKULL_FOSSIL = ITEMS.register("thyreosaurus_skull_fossil",
+            () -> new Item(new Item.Properties()));
 
     public static final RegistryObject<Item> SAURICHTHYS_FOSSIL = ITEMS.register("saurichthys_fossil",
             () -> new Item(new Item.Properties()));
 
 
-    public static final RegistryObject<Item> CRIOCERATITIES_SHELL = ITEMS.register("crioceratities_shell",
+    public static final RegistryObject<Item> CRIOCERATITES_SHELL = ITEMS.register("crioceratites_shell",
             () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> RAW_SQUID = ITEMS.register("raw_squid",
             () -> new Item(new Item.Properties().food(ModFoods.RAW_SQUID)));
     public static final RegistryObject<Item> COOKED_SQUID = ITEMS.register("cooked_squid",
             () -> new Item(new Item.Properties().food(ModFoods.COOKED_SQUID)));
-    public static final RegistryObject<Item> CRIOCERATITIES_DNA = ITEMS.register("crioceratities_dna",
+    public static final RegistryObject<Item> CRIOCERATITES_DNA = ITEMS.register("crioceratites_dna",
             () -> new Item(new Item.Properties()));
 
     public static final RegistryObject<Item> BALAUR_DNA = ITEMS.register("balaur_dna",
+            () -> new Item(new Item.Properties()));
+
+    public static final RegistryObject<Item> THYREOSAURUS_DNA = ITEMS.register("thyreosaurus_dna",
             () -> new Item(new Item.Properties()));
 
     public static final RegistryObject<Item> SAURICHTHYS_DNA = ITEMS.register("saurichthys_dna",
@@ -68,10 +73,11 @@ public class ModItems {
             () -> new ForgeSpawnEggItem(EntityTypes.SAURICHTHYS_ENTITY, 0x454080, 0xbebddc, new Item.Properties().stacksTo(64)));
 
     public static final RegistryObject<Item> BALAUR_SPAWN_EGG = ITEMS.register("balaur_spawn_egg",
-            () -> new ForgeSpawnEggItem(EntityTypes.BALAUR_ENTITY, 0x454080, 0xbebddc, new Item.Properties().stacksTo(64)));
-
+            () -> new ForgeSpawnEggItem(EntityTypes.BALAUR_ENTITY, 0x736256, 0x88939e, new Item.Properties().stacksTo(64)));
+                    //                                                              ^ main colour        ^ Dots
     public static final RegistryObject<Item> THYREOSAURUS_SPAWN_EGG = ITEMS.register("thyreosaurus_spawn_egg",
-            () -> new ForgeSpawnEggItem(EntityTypes.THYREOSAURUS_ENTITY, 0x454080, 0xbebddc, new Item.Properties().stacksTo(64)));
+            () -> new ForgeSpawnEggItem(EntityTypes.THYREOSAURUS_ENTITY, 0xc2ac84, 0x573220, new Item.Properties().stacksTo(64)));
+
 
     public static final RegistryObject<Item> BUCKET_OF_SAURICHTHYS = ITEMS.register("bucket_of_saurichthys",
             () -> new MobBucketItem(() -> EntityTypes.SAURICHTHYS_ENTITY.get(),

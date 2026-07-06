@@ -25,17 +25,19 @@ public class ModCreativeModTabs {
                     pOutput.accept(ModItems.DEEPSLATE_FOSSIL.get());
                     pOutput.accept(ModItems.BALAUR_SKULL_FOSSIL.get());
                     pOutput.accept(ModItems.SAURICHTHYS_FOSSIL.get());
+                    pOutput.accept(ModItems.THYREOSAURUS_SKULL_FOSSIL.get());
 
                     pOutput.accept(ModItems.BALAUR_DNA.get());
-                    pOutput.accept(ModItems.CRIOCERATITIES_DNA.get());
+                    pOutput.accept(ModItems.CRIOCERATITES_DNA.get());
                     pOutput.accept(ModItems.SAURICHTHYS_DNA.get());
+                    pOutput.accept(ModItems.THYREOSAURUS_DNA.get());
 
                     pOutput.accept(ModItems.RAW_SQUID.get());
                     pOutput.accept(ModItems.COOKED_SQUID.get());
                     pOutput.accept(ModItems.RAW_SAURICHTHYS.get());
                     pOutput.accept(ModItems.COOKED_SAURICHTHYS.get());
 
-                    pOutput.accept(ModItems.CRIOCERATITIES_SHELL.get());
+                    pOutput.accept(ModItems.CRIOCERATITES_SHELL.get());
 
                     pOutput.accept(ModItems.BALAUR_EGG.get());
 
@@ -72,6 +74,8 @@ public class ModCreativeModTabs {
 
                     pOutput.accept(ModBlocks.CLUBMOSS.get());
                     pOutput.accept(ModBlocks.HORSETAILS.get());
+
+                    pOutput.accept(ModItems.BUCKET_OF_SAURICHTHYS.get());
 
                     pOutput.accept(ModItems.SAURICHTHYS_SPAWN_EGG.get());
                     pOutput.accept(ModItems.BALAUR_SPAWN_EGG.get());
